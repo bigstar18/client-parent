@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HQModel", "HQModel.csproj", "{E57FDC0B-8946-46CC-B5FB-29C07E19794B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E57FDC0B-8946-46CC-B5FB-29C07E19794B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57FDC0B-8946-46CC-B5FB-29C07E19794B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57FDC0B-8946-46CC-B5FB-29C07E19794B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57FDC0B-8946-46CC-B5FB-29C07E19794B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

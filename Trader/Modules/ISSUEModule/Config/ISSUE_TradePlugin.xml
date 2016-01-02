@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConfigInfo>
+  <Enable>true</Enable>
+  <!--服务器类型-->
+  <ServerType>0</ServerType>
+  <Text>投资品交易系统</Text>
+  <Http>http://</Http>
+  <!--通讯地址 1:tradeweb\httpXmlServlet 2:webshell\httpXmlServlet-->
+  <CommunicationUrl>issue_tradeweb\httpXmlServlet</CommunicationUrl>
+  <!--显示方式-->
+  <DisplayTypes>4</DisplayTypes>
+  <!--当前电信使用的服务器 -1 随机选择一个服务器-->
+  <CurTelecomServer>-1</CurTelecomServer>
+  <!--当前联通使用的服务器 -1 随机选择一个服务器-->
+  <CurNetcomServer>-1</CurNetcomServer>
+  <!--所有电信服务器信息-->
+  <AllTelecomServer>
+    <ServerInfo>
+      <ServerName>电信服务器一</ServerName>
+      <IPAddress>172.16.2.80</IPAddress>
+      <Port>10600</Port>
+    </ServerInfo>
+    <ServerInfo>
+      <ServerName>电信服务器二</ServerName>
+      <IPAddress>172.16.2.80</IPAddress>
+      <Port>10600</Port>
+    </ServerInfo>
+  </AllTelecomServer>
+  <!--所有联通服务器信息-->
+  <AllNetcomServer>
+    <ServerInfo>
+      <ServerName>联通服务器一</ServerName>
+      <IPAddress>172.16.2.80</IPAddress>
+      <Port>10600</Port>
+    </ServerInfo>
+    <ServerInfo>
+      <ServerName>联通服务器二</ServerName>
+      <IPAddress>172.16.2.80</IPAddress>
+      <Port>10600</Port>
+    </ServerInfo>
+  </AllNetcomServer>
+</ConfigInfo>

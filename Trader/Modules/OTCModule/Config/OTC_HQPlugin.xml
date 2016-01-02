@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConfigInfo>
+  <Enable>true</Enable>
+  <IsNeedLogon>false</IsNeedLogon>
+  <!--服务器类型-->
+  <ServerType>1</ServerType>
+  <Text>报价行情系统</Text>
+  <!--通讯地址-->
+  <CommunicationUrl>
+  </CommunicationUrl>
+  <!--显示方式-->
+  <DisplayTypes>0</DisplayTypes>
+  <!--当前电信使用的服务器 -1 随机选择一个服务器-->
+  <CurTelecomServer>-1</CurTelecomServer>
+  <!--当前联通使用的服务器 -1 随机选择一个服务器-->
+  <CurNetcomServer>-1</CurNetcomServer>
+  <!--所有电信服务器信息-->
+  <AllTelecomServer>
+    <ServerInfo>
+      <ServerName>电信服务器一</ServerName>
+      <IPAddress>172.16.2.10</IPAddress>
+      <Port>17922</Port>
+      <HttpPort>17923</HttpPort>
+    </ServerInfo>
+    <ServerInfo>
+      <ServerName>电信服务器二</ServerName>
+      <IPAddress>172.16.2.10</IPAddress>
+      <Port>17922</Port>
+      <HttpPort>17923</HttpPort>
+    </ServerInfo>
+  </AllTelecomServer>
+  <!--所有联通服务器信息-->
+  <AllNetcomServer>
+    <ServerInfo>
+      <ServerName>联通服务器一</ServerName>
+      <IPAddress>172.16.2.10</IPAddress>
+      <Port>17922</Port>
+      <HttpPort>17923</HttpPort>
+    </ServerInfo>
+    <ServerInfo>
+      <ServerName>联通服务器二</ServerName>
+      <IPAddress>172.16.2.10</IPAddress>
+      <Port>17922</Port>
+      <HttpPort>17923</HttpPort>
+    </ServerInfo>
+  </AllNetcomServer>
+</ConfigInfo>

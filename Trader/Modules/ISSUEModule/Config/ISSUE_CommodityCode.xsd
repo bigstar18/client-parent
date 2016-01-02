@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Context" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Context" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_UserDSName="Context" msprop:Generator_DataSetName="Context">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="parameter" msprop:Generator_UserTableName="parameter" msprop:Generator_RowDeletedName="parameterRowDeleted" msprop:Generator_RowChangedName="parameterRowChanged" msprop:Generator_RowClassName="parameterRow" msprop:Generator_RowChangingName="parameterRowChanging" msprop:Generator_RowEvArgName="parameterRowChangeEvent" msprop:Generator_RowEvHandlerName="parameterRowChangeEventHandler" msprop:Generator_TableClassName="parameterDataTable" msprop:Generator_TableVarName="tableparameter" msprop:Generator_RowDeletingName="parameterRowDeleting" msprop:Generator_TablePropName="parameter">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Flag" msprop:Generator_UserColumnName="Flag" msprop:Generator_ColumnVarNameInTable="columnFlag" msprop:Generator_ColumnPropNameInRow="Flag" msprop:Generator_ColumnPropNameInTable="FlagColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CommodityCode" msprop:Generator_UserColumnName="CommodityCode" msprop:Generator_ColumnVarNameInTable="columnCommodityCode" msprop:Generator_ColumnPropNameInRow="CommodityCode" msprop:Generator_ColumnPropNameInTable="CommodityCodeColumn" type="xs:string" minOccurs="0" />
+	      <xs:element name="CommodityName" msprop:Generator_UserColumnName="CommodityName" msprop:Generator_ColumnVarNameInTable="columnCommodityName" msprop:Generator_ColumnPropNameInRow="CommodityName" msprop:Generator_ColumnPropNameInTable="CommodityNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MarKet" msprop:Generator_UserColumnName="MarKet" msprop:Generator_ColumnPropNameInRow="MarKet" msprop:Generator_ColumnVarNameInTable="columnMarKet" msprop:Generator_ColumnPropNameInTable="MarKetColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

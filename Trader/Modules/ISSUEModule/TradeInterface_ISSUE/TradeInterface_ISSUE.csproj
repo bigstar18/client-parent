@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{DCB4BAAD-44E9-423C-967C-89EC9CA749E9}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TradeInterface_ISSUE</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\Broadcast.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\CheckUserRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\ChgPwdRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\CommData.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\CommDataQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\CommDataQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\CommodityInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\CommodityQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\CommodityQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\FirmBreedInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\FirmbreedQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\FirmInfoResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\HoldingDetailInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\HoldingDetailRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\HoldingDetailResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\HoldingInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\HoldingQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\HoldingQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\InvestorInfoResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\LogonRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\LogonResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\MarkeInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\MarketQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\MarketQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\OrderInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\OrderQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\OrderQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\OrderRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\RecResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\ResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\SysTimeQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\SysTimeQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\TradeInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\TradeMessage.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\TradeQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\TradeQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\TradeSumInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\TradeSumQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\TradeSumQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.DataVO\WithDrawOrderRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.ISSUE.Interface\ITradeLibrary.cs" />
+    <Compile Include="TradeInterface.Properties\Resources.cs" />
+    <Compile Include="TradeInterface.Properties\Settings.cs" />
+    <Compile Include="TradeInterface\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TradeInterface.Properties\Resources.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

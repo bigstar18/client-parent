@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B3AB78C4-9FFD-4ACC-B6E1-A66374A56D78}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>YrdPluginObject</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PluginInterface.Properties\Resources.cs" />
+    <Compile Include="PluginInterface.Properties\Settings.cs" />
+    <Compile Include="PluginInterface\BrowseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginInterface\ChgPWD.cs" />
+    <Compile Include="PluginInterface\Configuration.cs" />
+    <Compile Include="PluginInterface\DisplayTypes.cs" />
+    <Compile Include="PluginInterface\EventAgencyLogOut.cs" />
+    <Compile Include="PluginInterface\EventInitData.cs" />
+    <Compile Include="PluginInterface\EventLockTree.cs" />
+    <Compile Include="PluginInterface\EventLogOut.cs" />
+    <Compile Include="PluginInterface\EventPlayMessage.cs" />
+    <Compile Include="PluginInterface\EventReLoad.cs" />
+    <Compile Include="PluginInterface\EventUnLock.cs" />
+    <Compile Include="PluginInterface\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginInterface\IPlugin.cs" />
+    <Compile Include="PluginInterface\IPluginHost.cs" />
+    <Compile Include="PluginInterface\LogonInfo.cs" />
+    <Compile Include="PluginInterface\PluginCommunicateInfo.cs" />
+    <Compile Include="PluginInterface\PluginConfigInfo.cs" />
+    <Compile Include="PluginInterface\PluginInfoType.cs" />
+    <Compile Include="PluginInterface\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PluginInterface.Properties\Resources.resources" />
+    <EmbeddedResource Include="PluginInterface\BrowseForm.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

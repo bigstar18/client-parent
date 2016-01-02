@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigInfo>
+  <Enable>true</Enable>
+  <IsNeedLogon>false</IsNeedLogon>
+  <!--服务器类型-->
+  <ServerType>0</ServerType>
+  <Text>客户平台</Text>
+  <Http>http://</Http>
+  <!--通讯地址-->
+  <CommunicationUrl>common_front/checkneedless/user/logon/logon.action</CommunicationUrl>
+  <PreLoginUrl>/common_front/front/frame/index.jsp</PreLoginUrl>
+  <LoginedUrl>/common_front/front/frame/index.jsp</LoginedUrl>
+  <!--显示方式-->
+  <DisplayTypes>1</DisplayTypes>
+  <!--当前电信使用的服务器 -1 随机选择一个服务器-->
+  <CurTelecomServer>-1</CurTelecomServer>
+  <!--当前联通使用的服务器 -1 随机选择一个服务器-->
+  <CurNetcomServer>-1</CurNetcomServer>
+  <!--所有电信服务器信息-->
+  <AllTelecomServer>
+    <ServerInfo>
+      <ServerName>电信服务器</ServerName>
+      <IPAddress>58.215.166.108</IPAddress>
+      <Port>10062</Port>
+    </ServerInfo>
+  </AllTelecomServer>
+  <!--所有联通服务器信息-->
+  <AllNetcomServer>
+    <ServerInfo>
+      <ServerName>联通服务器</ServerName>
+      <IPAddress>58.215.166.108</IPAddress>
+      <Port>10062</Port>
+    </ServerInfo>
+  </AllNetcomServer>
+</ConfigInfo>

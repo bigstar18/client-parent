@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigInfo>
+  <Enable>true</Enable>
+  <Text>设置服务器</Text>
+  <!--服务器类型-->
+  <ServerType>2</ServerType>
+  <CommunicationUrl>tradeweb\httpXmlServlet</CommunicationUrl>
+  <!--显示方式-->
+  <DisplayTypes>2</DisplayTypes>
+  <ServerNameFir>联通服务器</ServerNameFir>
+  <ServerNameSec>电信服务器</ServerNameSec>
+  <!--当前电信使用的服务器 -1 随机选择一个服务器-->
+  <CurTelecomServer>0</CurTelecomServer>
+  <!--当前联通使用的服务器 -1 随机选择一个服务器-->
+  <CurNetcomServer>-1</CurNetcomServer>
+</ConfigInfo>

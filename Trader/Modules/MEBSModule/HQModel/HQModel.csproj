@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{12FD5A5F-0709-432C-87F6-46CC992A6F34}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>HQModel</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ToolsLibrary" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\BillDataVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\ClassVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDBillByVersionVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDBillVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDByConditionVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDByTimeVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDClientVersionVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDDateVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDLogonVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDMarketInfoVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDMarketSortVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDMinLineIntervalVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDMinVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDProductInfoVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDQuoteListVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDQuoteVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDSetCurPage.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDSortVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDTradeTimeVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDVersionVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CMDVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CodeTable.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CommidityVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CommodityClassVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\CommodityInfo.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\KLineData.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\LogonVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\MarketDataVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\MarketInfoListVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\MarketInfoVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\MarketStatusVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\MarketVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\MinDataVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\Packet_HttpRequest.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\Packet_MarketStatus.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\Packet_MultiQuote.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\ProductData.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\ProductDataVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\ProductInfoListVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\ProductInfoVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\RequestUtil.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\SortListVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\TradeTimeVO.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.DataVO\VersionInfo.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.OutInfo\IniFile.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.OutInfo\WriteLog.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.Properties\Settings.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.Service.IO\InputStreamConvert.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.Service.IO\OutputStreamConvert.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel.Service\HQServiceUtil.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel\PluginInfo.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel\RHColor.cs" />
+    <Compile Include="Gnnt.MEBS.HQModel\SetInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

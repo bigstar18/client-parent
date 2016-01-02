@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{ED17FC98-BBA5-46E8-8C89-D7A55E84A4C3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TradeInterface</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\AccountInfo.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\Broadcast.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\CheckMappingUserRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\CheckUserRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\ChgMappingPwdRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\ChgPwdRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\Code.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\CommData.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\CommDataQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\CommDataQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\CommodityInfo.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\CommodityQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\CommodityQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\ConditionOrderRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\ConditionOrderResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\ConditionQueryOrderInfo.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\ConditionQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\ConditionQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\ConditionRevokeRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\ConditionRevokeResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\ConditionTotalInfo.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\FirmBreedInfo.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\FirmbreedQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\FirmInfoResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\GetMappingUserRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\GetMappingUserResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\HoldingDetailInfo.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\HoldingDetailRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\HoldingDetailResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\HoldingInfo.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\HoldingQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\HoldingQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\LogonRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\LogonResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\MappingUser_Info.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\MarkeInfo.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\MarketQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\MarketQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\MixUserRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\OrderInfo.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\OrderQueryPagingRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\OrderQueryPagingResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\OrderQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\OrderQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\OrderQueryTotalRow.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\OrderRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\QuerydateqtyRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\QuerydateqtyResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\RecResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\ResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\SysTimeQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\SysTimeQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\TotalRow.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\TradeInfo.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\TradeInfoTotalRow.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\TradeMessage.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\TradeQueryPagingRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\TradeQueryPagingResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\TradeQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\TradeQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\VerifyVersionRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\VerifyVersionResponseVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.DataVO\WithDrawOrderRequestVO.cs" />
+    <Compile Include="TradeInterface.Yrdce.Interface\ITradeLibrary.cs" />
+    <Compile Include="TradeInterface.Properties\Resources.cs" />
+    <Compile Include="TradeInterface.Properties\Settings.cs" />
+    <Compile Include="TradeInterface\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TradeInterface.Properties\Resources.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="gb2312"?>
+ <OTC>
+  <COMPONENT NAME="HQSystems">
+    <bDebug>true</bDebug>
+    <!--左侧盘面宽度-->
+    <QuoteWidth>260</QuoteWidth>
+    <!--是否多市场-->
+    <MultiMarket>false</MultiMarket>
+    <!--是否显示左侧按钮-->
+    <LeftButton>false</LeftButton>
+    <!--是否显示欢迎信息-->
+    <WelcomeInfo>false</WelcomeInfo>
+    <!--交易商承诺地址 不配置则从 license.txt中读取-->
+    <AddressLicense>
+    </AddressLicense>
+    <!--在分时k线界面双击商品名称是否将商品代码带入.默认为true-->
+    <QuoteMouseDoubleClick>true</QuoteMouseDoubleClick>
+    <addMarketName>false</addMarketName>
+    <!--优先排序的商品种类-->
+    <SortRules00>
+    </SortRules00>
+    <!--F10-->
+    <CommodityInfoAddress>http://122.96.106.43:16925/tradeweb/commodityDesc/CommodityDetail.jsp</CommodityInfoAddress>
+    <Market00>所有报价商品</Market00>
+    <!-- 市场公告信息地址-->
+    <MarketInfo>
+    </MarketInfo>
+    <ShowIndex>false</ShowIndex>
+    <!-- 报价排名 标题字体加粗-->
+    <FontB>false</FontB>
+    <!--是否显示IP地址和端口-->
+    <DisplayIP>true</DisplayIP>
+    <!--行情是否自动更新  采用以前老式自动更新办法-->
+    <AutoUpdate>false</AutoUpdate>
+  </COMPONENT>
+</OTC>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{A04593FD-F713-42FA-B6EB-1225BE955066}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Trade_OTC</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="TradeControlLib_OTC" />
+    <Reference Include="TradeInterface_OTC" />
+    <Reference Include="ToolsLibrary" />
+    <Reference Include="PluginInterface" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\AddValue.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\AllOrderItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\BitmapRegion.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\BizController.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\ColItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\CommodityItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\ControlLayout.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\CreateXmlFile.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\DataProcess.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\FundsItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\Global.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\HoldingDetailItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\HoldingItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\IdentityStatus.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\IniData.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\InterFace.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\LocalHook.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\MessageBoxEx.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\MessageForm.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\NativeWin32API.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\OrderItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\PlayWav.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\PreOrderItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\RowComparer.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\ThreadPoolParameter.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\TradeItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\TradeOrderItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.Library\XmlDataSet.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.ToolsBar\ToolsBarButton.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC.ToolsBar\ToolsBarControl.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC\AboutForm.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC\CloseCommodityInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC\MainForm.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC\NewOrdersform.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC\PWarehouseForm.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC\TMainForm.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC\TMainYJSZ.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC\UserSet.cs" />
+    <Compile Include="TradeClientApp.Gnnt.OTC\YuJingMessage.cs" />
+    <Compile Include="TradeClientApp.Properties\Resources.cs" />
+    <Compile Include="TradeClientApp.Properties\Settings.cs" />
+    <Compile Include="TradeClientApp\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TradeClientApp.Gnnt.OTC.Library\MessageForm.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.OTC.ToolsBar\ToolsBarControl.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.OTC\AboutForm.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.OTC\NewOrdersform.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.OTC\PWarehouseForm.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.OTC\TMainForm.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.OTC\TMainYJSZ.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.OTC\UserSet.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.OTC\YuJingMessage.resources" />
+    <EmbeddedResource Include="TradeClientApp.Properties\Resources.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

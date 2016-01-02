@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{15F2691C-9F8F-4CB5-8247-72979B182949}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>YrdTrade</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HttpTrade.Yrdce.MEBS.Lib\IniFile.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.Lib\MarketAndeComm.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.Lib\ProtocolName.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.Lib\TradeLibrary.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.Lib\WriteLog.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\AccountInfoList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\Account_Info.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\BroadcastList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CheckMappingUserRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CheckMappingUserRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CheckMappingUserReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CheckUserRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CheckUserRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CheckUserReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ChgMappingPwdRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ChgMappingPwdRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ChgMappingPwdReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ChgPwdRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ChgPwdRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ChgPwdReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\Code.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CodeList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CommDataQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CommDataQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CommDataQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CommDataResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CommodityQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CommodityQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CommodityQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\CommodityQueryResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ConditionOrderRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ConditionOrderRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ConditionOrderReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ConditionOrderTotal.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ConditionOrder_QueryRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ConditionOrder_QueryResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ConditionQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ConditionQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ConditionRevokeRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ConditionRevokeReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\Condition_Info.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\FirmBreedRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\FirmBreedRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\FirmBreedReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\FirmBreedResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\FirmInfo.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\FirmInfoRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\FirmInfoRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\FirmInfoReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\FirmInfoResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\F_FirmBreedInfo.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\GetMappingUserRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\GetMappingUserRepResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\GetMappingUserRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\GetMappingUserReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\HoldingDetailInfoResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\HoldingDetailRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\HoldingDetailRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\HoldingDetailReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\HoldingInfoResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\HoldingQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\HoldingQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\HoldingQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\LogoffRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\LogoffRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\LogoffReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\LogonRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\LogonRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\LogonReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\MappingUserInfo.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\MarketQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\MarketQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\MarketQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\MarketQueryResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\MixUserRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\MixUserRepVOResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\MixUserReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\M_Broadcast.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\M_CommData.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\M_CommodityInfo.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\M_HoldingDetailInfo.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\M_HoldingInfo.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\M_MarkeInfo.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\M_OrderInfo.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\M_TradeInfo.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\M_TradeMessage.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\OderInfoResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\OderQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\OrderQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\OrderQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\OrderRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\OrderRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\OrderReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\QuerydateqtyRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\QuerydateqtyRepResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\QuerydateqtyRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\QuerydateqtyReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\RecallConditionOrderRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\RepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\ResultListREC.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\SysTimeQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\SysTimeQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\SysTimeRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\TradeInfoResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\TradeMessageList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\TradePagingQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\TradePagingQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\TradePagingQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\TradeQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\TradeQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\TradeQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\TradeQueryTotalRow.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\T_TotalRow.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\VerifyVersionRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\VerifyVersionRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\VerifyVersionReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\WeekOrderInfo.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\WeekOrderInfoResultList.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\WeekOrderPagingQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\WeekOrderPagingQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\WeekOrderPagingQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\WeekOrderQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\WeekOrderQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\WeekOrderQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\WeekOrderQueryTotalRow.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\WithDrawOrderRepResult.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\WithDrawOrderRepVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS.VO\WithDrawOrderReqVO.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS\CookieManager.cs" />
+    <Compile Include="HttpTrade.Yrdce.MEBS\HTTPCommunicate.cs" />
+    <Compile Include="HttpTrade.Properties\Resources.cs" />
+    <Compile Include="HttpTrade.Properties\Settings.cs" />
+    <Compile Include="HttpTrade\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HttpTrade\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HttpTrade.Properties\Resources.resources" />
+    <EmbeddedResource Include="HttpTrade\Form1.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ToolsLibrary\ToolsLibrary.csproj">
+      <Project>{b3266aea-289d-4777-91d9-f9a6ac4164a0}</Project>
+      <Name>ToolsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TradeInterface\TradeInterface.csproj">
+      <Project>{ed17fc98-bba5-46e8-8c89-d7a55e84a4c3}</Project>
+      <Name>TradeInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

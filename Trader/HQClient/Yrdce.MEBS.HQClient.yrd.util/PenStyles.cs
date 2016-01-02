@@ -1,0 +1,28 @@
+using System;
+namespace Gnnt.MEBS.HQClient.gnnt.util
+{
+	public enum PenStyles
+	{
+		PS_SOLID,
+		PS_DASH,
+		PS_DOT,
+		PS_DASHDOT,
+		PS_DASHDOTDOT,
+		PS_NULL,
+		PS_INSIDEClient,
+		PS_USERSTYLE,
+		PS_ALTERNATE,
+		PS_STYLE_MASK = 15,
+		PS_ENDCAP_ROUND = 0,
+		PS_ENDCAP_SQUARE = 256,
+		PS_ENDCAP_FLAT = 512,
+		PS_ENDCAP_MASK = 3840,
+		PS_JOIN_ROUND = 0,
+		PS_JOIN_BEVEL = 4096,
+		PS_JOIN_MITER = 8192,
+		PS_JOIN_MASK = 61440,
+		PS_COSMETIC = 0,
+		PS_GEOMETRIC = 65536,
+		PS_TYPE_MASK = 983040
+	}
+}

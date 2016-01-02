@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{240C35BF-86F0-4B6B-B9A6-4216A4BF4BB5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Object</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DIYForm.Properties\Resources.cs" />
+    <Compile Include="DIYForm.Properties\Settings.cs" />
+    <Compile Include="DIYForm\CommonClass.cs" />
+    <Compile Include="DIYForm\MyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIYForm\MyFormMousePosition.cs" />
+    <Compile Include="DIYForm\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DIYForm\MyForm.resources" />
+    <EmbeddedResource Include="DIYForm.Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LEFT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RIGHT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestBU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RIGHTTOP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LEFTTOP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftBottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOTTOM.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

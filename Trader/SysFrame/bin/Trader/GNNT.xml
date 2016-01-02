@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="gb2312"?>
+<CONFIG>
+  <COMPONENT NAME="Systems">
+    <RunMode>1</RunMode>
+    <SysLanguage>0</SysLanguage>
+    <!--验证码类型  0：字母数字组合 1：纯数字  2：纯字母-->
+    <PassWordType>0</PassWordType>
+    <FirstRunApp>true</FirstRunApp>
+    <MinThreads>5</MinThreads>
+    <MaxThreads>25</MaxThreads>
+    <FormStyle>0</FormStyle>
+    <!--当前使用的服务器类型 0是电信-->
+    <CurServer>0</CurServer>
+    <!--是否显示简略网络设置界面-->
+    <ServerSet>true</ServerSet>
+    <!--设置网络连接超时时间，单位毫秒-->
+    <TimeOut>300</TimeOut>
+    <!--是否自动更新-->
+    <AutoUpdate>true</AutoUpdate>
+    <!--客户端标题-->
+    <Title>长三角商品交易所(模拟)</Title>
+    <!--客户端版本号-->
+    <Version>5.0.1.0</Version>
+    <CompanyName>
+    </CompanyName>
+    <UsernameMaxLength>10</UsernameMaxLength>
+    <!--是否隐藏主界面-->
+    <Hide>false</Hide>
+    <!--登录时是否直接显示登录窗口  0表示是，1表示直接显示框架窗口-->
+    <ShowLoginPage>0</ShowLoginPage>
+    <!--是否强制修改密码-->
+    <ForceChangePassword>true</ForceChangePassword>
+    <!--是否强制修改简单密码（长度小于8，纯数字纯字母）-->
+    <IsModifyPassword>true</IsModifyPassword>
+    <!--是否显示上次登录时间及ip-->
+    <IsDisplayLastIP>true</IsDisplayLastIP>
+    <!--是否显示交易商承诺-->
+    <IsDisplayCommit>true</IsDisplayCommit>
+    <!--今日是否显示交易商承诺-->
+    <IsDisplayCommitday>
+    </IsDisplayCommitday>
+    <!--是否显示交易商承诺里的 chbCommit以后不再提示可选框-->
+    <IsDisplayChbCommit>true</IsDisplayChbCommit>
+    <!--交易商承诺里的提示为  0：今日不再提示，1：以后不再提示-->
+    <CommitType>0</CommitType>
+    <!--是否显示结算窗口-->
+    <IsDisplayBalance>false</IsDisplayBalance>
+    <!--资金结算表地址-->
+    <ReportUrl>/tradeweb/report/report.do?d1=lastdate&amp;reportname=zjjsb</ReportUrl>
+    <!--交易商承诺地址 不配置则从 license.txt中读取-->
+    <AddressLicense>
+    </AddressLicense>
+    <!--是否显示IP地址和端口-->
+    <DisplayIP>true</DisplayIP>
+    <!--先弹出登录框还是先弹出交易商承诺-->
+    <FirstLogon>true</FirstLogon>
+    <!-- 市场ID 使用key盘的时候使用-->
+    <MarketID>6</MarketID>
+    <!-- 登录模式 0:普通登录 1:key盘与普通并存登录模式 2:强制使用key盘登录模式-->
+    <LoadMode>0</LoadMode>
+    <!-- 市场公告信息地址-->
+    <MarketInfo>
+    </MarketInfo>
+    <!--框架左侧的背景颜色RGB三原色配置-->
+    <!--例如橘色（平安）：RGB：255，163，90；灰色（宁波）：RGB：172，159，115-->
+    <ColorR>54</ColorR>
+    <ColorG>117</ColorG>
+    <ColorB>171</ColorB>
+  </COMPONENT>
+</CONFIG>

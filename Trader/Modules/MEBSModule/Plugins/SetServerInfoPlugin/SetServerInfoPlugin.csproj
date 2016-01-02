@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{5DC84065-F520-4E3F-AED3-B2F6650702B9}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>SetServerInfoPlugin</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="PluginInterface" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="ProxySocket" />
+    <Reference Include="ToolsLibrary" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetServerInfoPlugin.Properties\Resources.cs" />
+    <Compile Include="SetServerInfoPlugin.Properties\Settings.cs" />
+    <Compile Include="SetServerInfoPlugin\Form1.cs" />
+    <Compile Include="SetServerInfoPlugin\IniFile.cs" />
+    <Compile Include="SetServerInfoPlugin\MoudelServerInfo.cs" />
+    <Compile Include="SetServerInfoPlugin\Program.cs" />
+    <Compile Include="SetServerInfoPlugin\ServerSet.cs" />
+    <Compile Include="SetServerInfoPlugin\ServerSetE.cs" />
+    <Compile Include="SetServerInfoPlugin\ServerSetPlugin.cs" />
+    <Compile Include="SetServerInfoPlugin\SetServerInfoC.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SetServerInfoPlugin.Properties\Resources.resources" />
+    <EmbeddedResource Include="SetServerInfoPlugin\ServerSet.resources" />
+    <EmbeddedResource Include="SetServerInfoPlugin\ServerSetE.resources" />
+    <EmbeddedResource Include="SetServerInfoPlugin\SetServerInfoC.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

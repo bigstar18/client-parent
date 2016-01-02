@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Context" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Context" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_UserDSName="Context" msprop:Generator_DataSetName="Context">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="yjmessage" msprop:Generator_UserTableName="yjmessage" msprop:Generator_RowDeletedName="yjmessageRowDeleted" msprop:Generator_RowChangedName="yjmessageRowChanged" msprop:Generator_RowClassName="yjmessageRow" msprop:Generator_RowChangingName="yjmessageRowChanging" msprop:Generator_RowEvArgName="yjmessageRowChangeEvent" msprop:Generator_RowEvHandlerName="yjmessageRowChangeEventHandler" msprop:Generator_TableClassName="yjmessageDataTable" msprop:Generator_TableVarName="tableyjmessage" msprop:Generator_RowDeletingName="yjmessageRowDeleting" msprop:Generator_TablePropName="yjmessage">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrementSeed="1" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YJLX" msprop:Generator_UserColumnName="YJLX" msprop:Generator_ColumnPropNameInRow="YJLX" msprop:Generator_ColumnVarNameInTable="columnYJLX" msprop:Generator_ColumnPropNameInTable="YJLXColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YJX" msprop:Generator_UserColumnName="YJX" msprop:Generator_ColumnVarNameInTable="columnYJX" msprop:Generator_ColumnPropNameInRow="YJX" msprop:Generator_ColumnPropNameInTable="YJXColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="YJTJ" msprop:Generator_UserColumnName="YJTJ" msprop:Generator_ColumnVarNameInTable="columnYJTJ" msprop:Generator_ColumnPropNameInRow="YJTJ" msprop:Generator_ColumnPropNameInTable="YJTJColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DQZ" msprop:Generator_UserColumnName="DQZ" msprop:Generator_ColumnVarNameInTable="columnDQZ" msprop:Generator_ColumnPropNameInRow="DQZ" msprop:Generator_ColumnPropNameInTable="DQZColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CFSJ" msprop:Generator_UserColumnName="CFSJ" msprop:Generator_ColumnPropNameInRow="CFSJ" msprop:Generator_ColumnVarNameInTable="columnCFSJ" msprop:Generator_ColumnPropNameInTable="CFSJColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{F51BD404-1AC2-433D-B800-AED02FE1A14E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TradeInterface_OTC</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\AgencyLogonRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\Broadcast.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\BuySell.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\CBListItem.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\CheckUserRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\ChgPwdRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\ClientStatus.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\CloseMode.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\Code.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\CommData.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\CommDataQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\CommDataQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\CommodityInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\CommodityQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\CommodityQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\ConnectStatus.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\CustomerOrderQuery.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\CustomerOrderQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\CustomerOrderQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\Define.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\EspecialMemberQuery.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\EspecialMemberQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\FirmBreedInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\FirmbreedQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\FirmFundsInfoResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\FirmHoldSumQuery.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\FirmHoldSumResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\FirmInfoRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\FirmInfoResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\HoldingDetailInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\HoldingDetailRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\HoldingDetailResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\HoldingInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\HoldingQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\HoldingQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\Identity.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\LogonRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\LogonResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\MarkeInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\MarketQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\MarketQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\MemberStatus.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\MemberType.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\OrderInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\OrderInfoState.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\OrderQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\OrderQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\OrderRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\RecResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\ResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\RunMode.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\SetLossProfitRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\SettleBasis.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\StaticEnumString.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\StatusBarType.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\SystemStatus.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\SysTimeQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\SysTimeQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\TradeDealType.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\TradeInfo.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\TradeMessage.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\TradeOperateType.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\TradeQueryRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\TradeQueryResponseVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\TradeType.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\WithdrawLossProfitRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\WithdrawLossProfitType.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\WithDrawOrderRequestVO.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.DataVO\YanQiFee.cs" />
+    <Compile Include="TradeInterface.Gnnt.OTC.Interface\ITradeLibrary.cs" />
+    <Compile Include="TradeInterface.Properties\Resources.cs" />
+    <Compile Include="TradeInterface.Properties\Settings.cs" />
+    <Compile Include="TradeInterface\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TradeInterface.Properties\Resources.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

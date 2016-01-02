@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SetInfo>
+  <iStyle>0</iStyle>
+  <CurButtonName>C1180</CurButtonName>
+  <ShowMarketBtnCount>6</ShowMarketBtnCount>
+  <CurTimeMarketId>11</CurTimeMarketId>
+  <StrIndicator>W%R</StrIndicator>
+  <SetColorStyle>true</SetColorStyle>
+  <!--涨幅计算 0 连续现货 1 投资类 2 报价-->
+  <AmountIncrease>0</AmountIncrease>
+  <Language>Chinese</Language>
+  <MarketIndex>0</MarketIndex>
+  <ServerIndex>0</ServerIndex>
+  <ShowBuySellPrice>3</ShowBuySellPrice>
+  <MultiQuoteStaticIndex>9</MultiQuoteStaticIndex>
+  <RightButtonItems>CareFul:细;Plate:盘;Map:图;</RightButtonItems>
+  <MultiQuoteName>Name:;MarketName:;Code:;CurPrice:;CurAmount:;SellPrice:;SellAmount:;BuyPrice:;BuyAmount:;TotalAmount:;UpValue:;UpRate:;ReverseCount:;Balance:;OpenPrice:;HighPrice:;LowPrice:;YesterBalance:;TotalMoney:;AmountRate:;ConsignRate:;Unit:;Industry:;Region:;</MultiQuoteName>
+  <MultiQuoteItems>No;Code;Name;CurPrice;CurAmount;SellPrice;SellAmount;BuyPrice;BuyAmount;UpValue;ReverseCount;Balance;OpenPrice;HighPrice;LowPrice;YesterBalance;UpRate;TotalMoney;AmountRate;TotalAmount;</MultiQuoteItems>
+  <!--成交明细标题-->
+  <TransactionBillName>Time:;Price:;CurVol:;Dingli:;ZhuanRang:;</TransactionBillName>
+  <TransactionBillItems>Time;Price;CurVol;Dingli;ZhuanRang;</TransactionBillItems>
+  <!--个股行情-->
+  <StockMarketName>Newly:;ChangeValue:;Open:;ChangeRate:;High:;CurVol:;Low:;TotalVolume:;VolRate:;Balance:;PreBalance:;Order:;OrderChange:;cje:成交额;hsl:换手率;zs:昨收;</StockMarketName>
+  <StockMarketItems>Newly;null;ChangeValue;Open;ChangeRate;High;CurVol;Low;TotalVolume;VolRate;Balance;PreBalance;Order;OrderChange;</StockMarketItems>
+</SetInfo>

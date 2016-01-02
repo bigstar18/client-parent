@@ -1,0 +1,5 @@
+<Modules>
+  <Module Name="MEBS" Path="Modules/MEBSModule/Plugins" ConfigPath="Modules/MEBSModule/Config" ModuleNO="15"/>
+  <Module Name="OTC" Path="Modules/OTCModule/Plugins" ConfigPath="Modules/OTCModule/Config" ModuleNO="21"/>
+  <Module Name="ISSUE" Path="Modules/ISSUEModule/Plugins" ConfigPath="Modules/ISSUEModule/Config" ModuleNO="18"/>
+</Modules>

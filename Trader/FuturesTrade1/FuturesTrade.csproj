@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\test\长三角商品交易所(模拟)\Trader\Modules\MEBSModule\FuturesTrade.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B42A39A1-B9C5-41BB-B87A-06DD6FFC73E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>FuturesTrade</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>FuturesTrade</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyCombobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Gnnt\UI\Modules\Query\UnTradeOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Query\Trade.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Query\FundsInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Query\HoldingDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Query\HoldingCollect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Query\TradeOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Query\PreDelegate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Query\ConditionOrderQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Query\CommodityInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Query\AllOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Order\T8Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Order\Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Order\P1Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Notifier\TaskbarNotifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Tools\ToolsBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\HQ\HQCommodityInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Modules\Status\StatusInfoBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Forms\IMainFormBase.cs" />
+    <Compile Include="Gnnt\UI\Forms\ToosForm\FormOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Forms\ToosForm\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Forms\ToosForm\Broadcast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Forms\ToosForm\BillOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Forms\ToosForm\UserSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Forms\ToosForm\CrazyOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Forms\ToosForm\ConditionOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Containers\TreeViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Containers\QueryTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\Containers\LockControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gnnt\UI\ContainerManager\IContainerManage.cs" />
+    <Compile Include="Gnnt\UI\ContainerManager\ContainorManagerT8.cs" />
+    <Compile Include="Gnnt\UI\ContainerManager\QueryControlLoad.cs" />
+    <Compile Include="Gnnt\UI\ContainerManager\ControlLoad.cs" />
+    <Compile Include="Gnnt\UI\ContainerManager\ContainerManagerP1.cs" />
+    <Compile Include="Gnnt\UI\ContainerManager\ContainerManage.cs" />
+    <Compile Include="Gnnt\BLL\Manager\OperationManager.cs" />
+    <Compile Include="Gnnt\BLL\Manager\RefreshQueryInfo.cs" />
+    <Compile Include="Gnnt\BLL\Query\QueryOperation.cs" />
+    <Compile Include="Gnnt\BLL\Query\QueryInitDataOperation.cs" />
+    <Compile Include="Gnnt\BLL\Query\QueryCommDataOperation.cs" />
+    <Compile Include="Gnnt\BLL\Query\QueryConOrderOperation.cs" />
+    <Compile Include="Gnnt\BLL\Query\QueryHoldingDetailOperation.cs" />
+    <Compile Include="Gnnt\BLL\Query\QueryHoldingOperation.cs" />
+    <Compile Include="Gnnt\BLL\Query\QuerySysTimeOperation.cs" />
+    <Compile Include="Gnnt\BLL\Query\QueryPredelegateOperation.cs" />
+    <Compile Include="Gnnt\BLL\Query\QueryOrderOperation\QueryUnOrderOperation.cs" />
+    <Compile Include="Gnnt\BLL\Query\QueryOrderOperation\QueryAllOrderOperation.cs" />
+    <Compile Include="Gnnt\BLL\Query\QueryTradeOperation\QueryTradeOperation.cs" />
+    <Compile Include="Gnnt\BLL\Query\QueryTradeOperation\QueryTradeOrderOperation.cs" />
+    <Compile Include="Gnnt\BLL\Order\ConOrderOperation.cs" />
+    <Compile Include="Gnnt\BLL\Order\SubmitOrderOperation.cs" />
+    <Compile Include="Gnnt\BLL\Order\SubmitOrderInfo.cs" />
+    <Compile Include="Gnnt\BLL\Order\OrderOperation.cs" />
+    <Compile Include="Gnnt\BLL\Order\OrderType.cs" />
+    <Compile Include="Gnnt\BLL\Order\RevokeOrderOperation.cs" />
+    <Compile Include="Gnnt\BLL\Order\T8OrderOperation.cs" />
+    <Compile Include="Gnnt\BLL\Order\RevokeConOrderOperation.cs" />
+    <Compile Include="Gnnt\BLL\Order\SubmitConOrderOperation.cs" />
+    <Compile Include="Gnnt\BLL\Order\SubmitConOrderInfo.cs" />
+    <Compile Include="Gnnt\DBService\Query\QuerySysTime.cs" />
+    <Compile Include="Gnnt\DBService\Query\QueryHoldingDetail.cs" />
+    <Compile Include="Gnnt\DBService\Query\QueryConOrder.cs" />
+    <Compile Include="Gnnt\DBService\Query\QueryCommData.cs" />
+    <Compile Include="Gnnt\DBService\Query\QueryInitData.cs" />
+    <Compile Include="Gnnt\DBService\Query\QueryHolding.cs" />
+    <Compile Include="Gnnt\DBService\Query\QueryOrder\IQueryOrder.cs" />
+    <Compile Include="Gnnt\DBService\Query\QueryOrder\QueryPingOrder.cs" />
+    <Compile Include="Gnnt\DBService\Query\QueryOrder\QueryOrder.cs" />
+    <Compile Include="Gnnt\DBService\Query\QueryTrade\IQueryTrade.cs" />
+    <Compile Include="Gnnt\DBService\Query\QueryTrade\QueryPingTrade.cs" />
+    <Compile Include="Gnnt\DBService\Query\QueryTrade\QueryTrade.cs" />
+    <Compile Include="Gnnt\DBService\Order\EntrustOrder.cs" />
+    <Compile Include="Gnnt\DBService\Order\ConditionOrder.cs" />
+    <Compile Include="Gnnt\DBService\Order\RevokeOrder.cs" />
+    <Compile Include="Gnnt\DBService\ServiceManager\ServiceManage.cs" />
+    <Compile Include="Gnnt\Library\ColItemInfo.cs" />
+    <Compile Include="Gnnt\Library\OrderItemInfo.cs" />
+    <Compile Include="Gnnt\Library\TradeOrderItemInfo.cs" />
+    <Compile Include="Gnnt\Library\AllOrderItemInfo.cs" />
+    <Compile Include="Gnnt\Library\TradeItemInfo.cs" />
+    <Compile Include="Gnnt\Library\CommodityItemInfo.cs" />
+    <Compile Include="Gnnt\Library\HoldingItemInfo.cs" />
+    <Compile Include="Gnnt\Library\HoldingDetailItemInfo.cs" />
+    <Compile Include="Gnnt\Library\FundsItemInfo.cs" />
+    <Compile Include="Gnnt\Library\PreOrderItemInfo.cs" />
+    <Compile Include="Gnnt\Library\ConditionOrderItemInfo.cs" />
+    <Compile Include="Gnnt\Library\BitmapRegion.cs" />
+    <Compile Include="Gnnt\Library\MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gnnt\Library\PlayWav.cs" />
+    <Compile Include="Gnnt\Library\ControlLayout.cs" />
+    <Compile Include="Gnnt\Library\IniFile.cs" />
+    <Compile Include="Gnnt\Library\WriteLog.cs" />
+    <Compile Include="Gnnt\Library\MessageBoxEx.cs" />
+    <Compile Include="Gnnt\Library\NativeWin32API.cs" />
+    <Compile Include="Gnnt\Library\IniData.cs" />
+    <Compile Include="Gnnt\Library\XmlDataSet.cs" />
+    <Compile Include="Gnnt\Library\LocalHook.cs" />
+    <Compile Include="Gnnt\Library\TradeDataInfo.cs" />
+    <Compile Include="Gnnt\Library\Global.cs" />
+    <Compile Include="Gnnt\Library\AddValue.cs" />
+    <Compile Include="Gnnt\Library\InterFace.cs" />
+    <Compile Include="Gnnt\Library\NewPriceLPData.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Gnnt\Library\MessageForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gnnt\UI\Containers\LockControl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gnnt\UI\Containers\QueryTabControl.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Containers\TreeViewControl.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Forms\MainForm.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Forms\ToosForm\AboutForm.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Forms\ToosForm\BillOrder.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Forms\ToosForm\Broadcast.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Forms\ToosForm\ConditionOrder.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Forms\ToosForm\CrazyOrder.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Forms\ToosForm\FormOrder.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Forms\ToosForm\UserSet.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\HQ\HQCommodityInfo.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Notifier\TaskbarNotifier.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Order\Order.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Order\P1Order.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Order\T8Order.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Query\AllOrder.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Query\CommodityInfo.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Query\ConditionOrderQuery.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Query\FundsInfo.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Query\HoldingCollect.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Query\HoldingDetail.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Query\PreDelegate.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Query\Trade.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Query\TradeOrder.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Query\UnTradeOrder.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gnnt\UI\Modules\Status\StatusInfoBar.resx" />
+    <EmbeddedResource Include="Gnnt\UI\Modules\Tools\ToolsBar.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\MEBSModule\HttpTrade\HttpTrade.csproj">
+      <Project>{15f2691c-9f8f-4cb5-8247-72979b182949}</Project>
+      <Name>HttpTrade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules\MEBSModule\TradeInterface\TradeInterface.csproj">
+      <Project>{ed17fc98-bba5-46e8-8c89-d7a55e84a4c3}</Project>
+      <Name>TradeInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PluginInterface\PluginInterface.csproj">
+      <Project>{b3ab78c4-9ffd-4acc-b6e1-a66374a56d78}</Project>
+      <Name>PluginInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsLibrary\ToolsLibrary.csproj">
+      <Project>{b3266aea-289d-4777-91d9-f9a6ac4164a0}</Project>
+      <Name>ToolsLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\快速.png" />
+    <Content Include="Resources\条件.png" />
+    <Content Include="Resources\浮动.png" />
+    <Content Include="Resources\cryz.png" />
+    <Content Include="Resources\设置.png" />
+    <Content Include="Resources\锁定.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

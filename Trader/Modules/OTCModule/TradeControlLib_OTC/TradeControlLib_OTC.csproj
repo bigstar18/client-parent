@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1FE5EC0B-D830-4439-86CE-9E46CE77459E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TradeControlLib_OTC</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="ToolsLibrary" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TradeControlLib.Gnnt.OTC\CustomizeText.cs" />
+    <Compile Include="TradeControlLib.Gnnt.OTC\DrawImageState.cs" />
+    <Compile Include="TradeControlLib.Gnnt.OTC\DrawProperties.cs" />
+    <Compile Include="TradeControlLib.Gnnt.OTC\DrawState.cs" />
+    <Compile Include="TradeControlLib.Gnnt.OTC\ProgressControl.cs" />
+    <Compile Include="TradeControlLib.Gnnt.OTC\TradeCtrl.cs" />
+    <Compile Include="TradeControlLib.Gnnt.OTC\TradeMenu.cs" />
+    <Compile Include="TradeControlLib.Properties\Resources.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TradeControlLib.Gnnt.OTC\CustomizeText.resources" />
+    <EmbeddedResource Include="TradeControlLib.Gnnt.OTC\ProgressControl.resources" />
+    <EmbeddedResource Include="TradeControlLib.Gnnt.OTC\TradeCtrl.resources" />
+    <EmbeddedResource Include="TradeControlLib.Properties\Resources.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

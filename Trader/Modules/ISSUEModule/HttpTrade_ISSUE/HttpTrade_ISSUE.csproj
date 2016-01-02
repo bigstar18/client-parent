@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{85559D07-EBB8-4050-A5C9-17A3BC06369C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>HttpTrade_ISSUE</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="TradeInterface_ISSUE" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ToolsLibrary" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HttpTrade.Gnnt.ISSUE.Lib\IniFile.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.Lib\MarketAndeComm.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.Lib\ProtocolName.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.Lib\TradeLibrary.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.Lib\WriteLog.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\BroadcastList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\CheckUserRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\CheckUserRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\CheckUserReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\ChgPwdRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\ChgPwdRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\ChgPwdReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\CommDataQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\CommDataQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\CommDataQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\CommDataResultList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\CommodityQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\CommodityQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\CommodityQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\CommodityQueryResultList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\FirmBreedRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\FirmBreedRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\FirmBreedReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\FirmBreedResultList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\FirmInfo.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\FirmInfoRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\FirmInfoRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\FirmInfoReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\FirmInfoResultList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\F_FirmBreedInfo.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\HoldingDetailInfoResultList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\HoldingDetailRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\HoldingDetailRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\HoldingDetailReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\HoldingInfoResultList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\HoldingQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\HoldingQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\HoldingQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\InvestorInfoRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\InvestorInfoRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\InvestorInfoReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\LogoffRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\LogoffRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\LogoffReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\LogonRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\LogonRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\LogonReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\MarketQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\MarketQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\MarketQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\MarketQueryResultList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\M_Broadcast.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\M_CommData.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\M_CommodityInfo.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\M_HoldingDetailInfo.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\M_HoldingInfo.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\M_MarkeInfo.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\M_OrderInfo.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\M_TradeInfo.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\M_TradeMessage.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\M_TradeSumInfo.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\OderInfoResultList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\OderQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\OrderQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\OrderQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\OrderRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\OrderRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\OrderReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\RepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\ReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\SysTimeQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\SysTimeQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\SysTimeRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\TradeInfoResultList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\TradeMessageList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\TradeQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\TradeQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\TradeQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\TradeSumInfoResultList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\TradeSumQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\TradeSumQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\TradeSumQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\WeekOrderInfo.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\WeekOrderInfoResultList.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\WeekOrderQueryRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\WeekOrderQueryRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\WeekOrderQueryReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\WithDrawOrderRepResult.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\WithDrawOrderRepVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE.VO\WithDrawOrderReqVO.cs" />
+    <Compile Include="HttpTrade.Gnnt.ISSUE\HTTPCommunicate.cs" />
+    <Compile Include="HttpTrade.Properties\Resources.cs" />
+    <Compile Include="HttpTrade.Properties\Settings.cs" />
+    <Compile Include="HttpTrade\Form1.cs" />
+    <Compile Include="HttpTrade\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HttpTrade.Properties\Resources.resources" />
+    <EmbeddedResource Include="HttpTrade\Form1.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

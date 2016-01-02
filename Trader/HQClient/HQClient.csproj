@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{23A550E4-DFA4-4D2A-BAA9-E7FEC90DE946}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>YrdClient</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Configuration">
+      <HintPath>..\SysFrame\bin\Debug\Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.BitmapControl\BitmapRegion.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.ClientForms\CommodityInfoF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.ClientForms\HQClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.ClientForms\HQForm.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.ClientForms\HQMDIForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.ClientForms\HQSubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.ClientForms\InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.ClientForms\MarketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.ClientForms\MarketInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.ClientForms\SelectServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.ClientForms\UserSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.ClientForms\UserSetFlag.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.HQThread\HttpThread.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.HQThread\MYThread.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.HQThread\ReceiveThread.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.HQThread\SendThread.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\ASI.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\BIAS.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\BOLL.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\BRAR.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\CCI.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\CR.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\DMA.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\DMI.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\EMV.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\EXPMA.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\IndicatorBase.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\IndicatorPos.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\KDJ.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\KLine.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\MA.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\MACD.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\MIKE.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\OBV.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\PSY.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\Reserve.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\ROC.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\RSI.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\SAR.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\TRIX.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\VOL.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\VR.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\WVAD.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient.Indicator\W_R.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\BillFieldInfo.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\ButtonUtils.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\clickRect.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Draw_KLine.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Draw_LastBill.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Draw_MinLine.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Draw_Quote.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\HQClientMain.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\MultiQuoteData.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\MultiQuoteItemInfo.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\MyButton.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\M_Common.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Page_Bill.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Page_Bottom.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Page_Button.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Page_History.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Page_KLine.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Page_Main.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Page_MarketStatus.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Page_MinLine.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Page_MultiQuote.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.MEBS.HQClient\Pos.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.util\AddValue.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.util\Arrays.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.util\CommodityClass.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.util\drawingMode.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.util\dwRop.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.util\GDIDraw.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.util\GlobalData.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.util\MyCommodity.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd.util\PenStyles.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.yrd\InterFace.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.Properties\Resources.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient.Properties\Settings.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient\InputWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient\MoudelServerInfo.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient\Program.cs" />
+    <Compile Include="Yrdce.MEBS.HQClient\ServerSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient\ServerSetE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient\SetServerInfoC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient\SysMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient\TestDraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.HQClient\TestSendPacket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplitButtonDemo\SplitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient.yrd.ClientForms\CommodityInfoF.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient.yrd.ClientForms\HQClientForm.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient.yrd.ClientForms\HQMDIForm.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient.yrd.ClientForms\HQSubForm.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient.yrd.ClientForms\InputDialog.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient.yrd.ClientForms\MarketForm.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient.yrd.ClientForms\MarketInfo.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient.yrd.ClientForms\SelectServer.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient.yrd.ClientForms\UserSet.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient\About.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient\InputWindow.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient\MainWindow.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient\ServerSet.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient\ServerSetE.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient\SetServerInfoC.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient\SysMessage.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient\TestDraw.resources" />
+    <EmbeddedResource Include="Yrdce.MEBS.HQClient\TestSendPacket.resources" />
+    <EmbeddedResource Include="HQClient.bin.Debug.Gnnt.ch.resources" />
+    <EmbeddedResource Include="HQClient.Properties.Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppUpdaterCom\AppUpdaterCom.csproj">
+      <Project>{aec10d6e-27d3-4345-87d4-bb75aa841f90}</Project>
+      <Name>AppUpdaterCom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DIYForm\DIYForm.csproj">
+      <Project>{240c35bf-86f0-4b6b-b9a6-4216a4bf4bb5}</Project>
+      <Name>DIYForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HQModel\HQModel.csproj">
+      <Project>{e57fdc0b-8946-46cc-b5fb-29c07e19794b}</Project>
+      <Name>HQModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProxySocket\ProxySocket.csproj">
+      <Project>{5708d788-8171-43f1-bf54-1e28f757ab43}</Project>
+      <Name>ProxySocket</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsLibrary\ToolsLibrary.csproj">
+      <Project>{b3266aea-289d-4777-91d9-f9a6ac4164a0}</Project>
+      <Name>ToolsLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

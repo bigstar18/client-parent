@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B20D6CC0-45FC-4D31-8F7D-C5077438A59F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>OTC_DeliveryReportPlugin</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="PluginInterface" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="HttpTrade_OTC" />
+    <Reference Include="ToolsLibrary" />
+    <Reference Include="TradeInterface_OTC" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeliveryReportPlugin.Properties\Resources.cs" />
+    <Compile Include="DeliveryReportPlugin.Properties\Settings.cs" />
+    <Compile Include="DeliveryReportPlugin\Form1.cs" />
+    <Compile Include="DeliveryReportPlugin\Program.cs" />
+    <Compile Include="Gnnt.OTC.Module.DeliveryReportPlugin\DeliveryReportPlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DeliveryReportPlugin.Properties\Resources.resources" />
+    <EmbeddedResource Include="DeliveryReportPlugin\Form1.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

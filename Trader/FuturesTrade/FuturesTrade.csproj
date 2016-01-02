@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B42A39A1-B9C5-41BB-B87A-06DD6FFC73E7}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>FuturesTrade</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FuturesTrade.Gnnt.BLL.Manager\OperationManager.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Manager\RefreshQueryInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Order\ConOrderOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Order\OrderOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Order\OrderType.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Order\RevokeConOrderOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Order\RevokeOrderOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Order\SubmitConOrderInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Order\SubmitConOrderOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Order\SubmitOrderInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Order\SubmitOrderOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Order\T8OrderOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Query.QueryOrderOperation\QueryAllOrderOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Query.QueryOrderOperation\QueryUnOrderOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Query.QueryTradeOperation\QueryTradeOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Query.QueryTradeOperation\QueryTradeOrderOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Query\QueryCommDataOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Query\QueryConOrderOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Query\QueryHoldingDetailOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Query\QueryHoldingOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Query\QueryInitDataOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Query\QueryOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Query\QueryPredelegateOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.BLL.Query\QuerySysTimeOperation.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Order\ConditionOrder.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Order\EntrustOrder.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Order\RevokeOrder.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Query.QueryOrder\IQueryOrder.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Query.QueryOrder\QueryOrder.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Query.QueryOrder\QueryPingOrder.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Query.QueryTrade\IQueryTrade.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Query.QueryTrade\QueryPingTrade.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Query.QueryTrade\QueryTrade.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Query\QueryCommData.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Query\QueryConOrder.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Query\QueryHolding.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Query\QueryHoldingDetail.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Query\QueryInitData.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.Query\QuerySysTime.cs" />
+    <Compile Include="FuturesTrade.Gnnt.DBService.ServiceManager\ServiceManage.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\AddValue.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\AllOrderItemInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\BitmapRegion.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\ColItemInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\CommodityItemInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\ConditionOrderItemInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\ControlLayout.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\FundsItemInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\Global.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\HoldingDetailItemInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\HoldingItemInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\IniData.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\IniFile.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\InterFace.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\LocalHook.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\MessageBoxEx.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.Library\NativeWin32API.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\NewPriceLPData.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\OrderItemInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\PlayWav.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\PreOrderItemInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\TradeDataInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\TradeItemInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\TradeOrderItemInfo.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\WriteLog.cs" />
+    <Compile Include="FuturesTrade.Gnnt.Library\XmlDataSet.cs" />
+    <Compile Include="FuturesTrade.Gnnt.UI.ContainerManager\ContainerManage.cs" />
+    <Compile Include="FuturesTrade.Gnnt.UI.ContainerManager\ContainerManagerP1.cs" />
+    <Compile Include="FuturesTrade.Gnnt.UI.ContainerManager\ContainorManagerT8.cs" />
+    <Compile Include="FuturesTrade.Gnnt.UI.ContainerManager\ControlLoad.cs" />
+    <Compile Include="FuturesTrade.Gnnt.UI.ContainerManager\IContainerManage.cs" />
+    <Compile Include="FuturesTrade.Gnnt.UI.ContainerManager\QueryControlLoad.cs" />
+    <Compile Include="FuturesTrade.Gnnt.UI.Containers\LockControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Containers\QueryTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Containers\TreeViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\BillOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\Broadcast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\ConditionOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\CrazyOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\FormOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\UserSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Forms\IMainFormBase.cs" />
+    <Compile Include="FuturesTrade.Gnnt.UI.Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.HQ\HQCommodityInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Notifier\TaskbarNotifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Order\Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Order\P1Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Order\T8Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Query\AllOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Query\CommodityInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Query\ConditionOrderQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Query\FundsInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Query\HoldingCollect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Query\HoldingDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Query\PreDelegate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Query\Trade.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Query\TradeOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Query\UnTradeOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Status\StatusInfoBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Gnnt.UI.Modules.Tools\ToolsBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FuturesTrade.Properties\Resources.cs" />
+    <Compile Include="FuturesTrade.Properties\Settings.cs" />
+    <Compile Include="FuturesTrade\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FuturesTrade.Gnnt.Library\MessageForm.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Containers\LockControl.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Containers\QueryTabControl.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Containers\TreeViewControl.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\AboutForm.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\BillOrder.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\Broadcast.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\ConditionOrder.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\CrazyOrder.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\FormOrder.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Forms.ToosForm\UserSet.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Forms\MainForm.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.HQ\HQCommodityInfo.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Notifier\TaskbarNotifier.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Order\Order.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Order\P1Order.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Order\T8Order.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Query\AllOrder.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Query\CommodityInfo.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Query\ConditionOrderQuery.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Query\FundsInfo.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Query\HoldingCollect.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Query\HoldingDetail.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Query\PreDelegate.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Query\Trade.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Query\TradeOrder.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Query\UnTradeOrder.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Status\StatusInfoBar.resources" />
+    <EmbeddedResource Include="FuturesTrade.Gnnt.UI.Modules.Tools\ToolsBar.resources" />
+    <EmbeddedResource Include="FuturesTrade.Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\MEBSModule\HttpTrade\HttpTrade.csproj">
+      <Project>{15f2691c-9f8f-4cb5-8247-72979b182949}</Project>
+      <Name>HttpTrade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules\MEBSModule\TradeInterface\TradeInterface.csproj">
+      <Project>{ed17fc98-bba5-46e8-8c89-d7a55e84a4c3}</Project>
+      <Name>TradeInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PluginInterface\PluginInterface.csproj">
+      <Project>{b3ab78c4-9ffd-4acc-b6e1-a66374a56d78}</Project>
+      <Name>PluginInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsLibrary\ToolsLibrary.csproj">
+      <Project>{b3266aea-289d-4777-91d9-f9a6ac4164a0}</Project>
+      <Name>ToolsLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

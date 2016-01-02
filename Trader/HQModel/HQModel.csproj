@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\test\长三角商品交易所(模拟)\Trader\Modules\MEBSModule\HQModel.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E57FDC0B-8946-46CC-B5FB-29C07E19794B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>YrdPattern</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Gnnt.MEBS.HQModel</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PluginInfo.cs" />
+    <Compile Include="RHColor.cs" />
+    <Compile Include="SetInfo.cs" />
+    <Compile Include="DataVO\CMDVO.cs" />
+    <Compile Include="DataVO\CMDMinVO.cs" />
+    <Compile Include="DataVO\CommidityVO.cs" />
+    <Compile Include="DataVO\CMDMarketInfoVO.cs" />
+    <Compile Include="DataVO\CMDTradeTimeVO.cs" />
+    <Compile Include="DataVO\CMDSetCurPage.cs" />
+    <Compile Include="DataVO\CMDClientVersionVO.cs" />
+    <Compile Include="DataVO\ProductInfoVO.cs" />
+    <Compile Include="DataVO\ProductInfoListVO.cs" />
+    <Compile Include="DataVO\MinDataVO.cs" />
+    <Compile Include="DataVO\LogonVO.cs" />
+    <Compile Include="DataVO\CMDBillByVersionVO.cs" />
+    <Compile Include="DataVO\CodeTable.cs" />
+    <Compile Include="DataVO\ProductData.cs" />
+    <Compile Include="DataVO\Packet_MultiQuote.cs" />
+    <Compile Include="DataVO\Packet_MarketStatus.cs" />
+    <Compile Include="DataVO\Packet_HttpRequest.cs" />
+    <Compile Include="DataVO\CommodityInfo.cs" />
+    <Compile Include="DataVO\SortListVO.cs" />
+    <Compile Include="DataVO\RequestUtil.cs" />
+    <Compile Include="DataVO\MarketStatusVO.cs" />
+    <Compile Include="DataVO\CMDQuoteVO.cs" />
+    <Compile Include="DataVO\CMDProductInfoVO.cs" />
+    <Compile Include="DataVO\CommodityClassVO.cs" />
+    <Compile Include="DataVO\ClassVO.cs" />
+    <Compile Include="DataVO\MarketVO.cs" />
+    <Compile Include="DataVO\CMDBillVO.cs" />
+    <Compile Include="DataVO\CMDMinLineIntervalVO.cs" />
+    <Compile Include="DataVO\CMDLogonVO.cs" />
+    <Compile Include="DataVO\BillDataVO.cs" />
+    <Compile Include="DataVO\KLineData.cs" />
+    <Compile Include="DataVO\CMDMarketSortVO.cs" />
+    <Compile Include="DataVO\CMDByConditionVO.cs" />
+    <Compile Include="DataVO\MarketDataVO.cs" />
+    <Compile Include="DataVO\CMDQuoteListVO.cs" />
+    <Compile Include="DataVO\CMDByTimeVO.cs" />
+    <Compile Include="DataVO\VersionInfo.cs" />
+    <Compile Include="DataVO\TradeTimeVO.cs" />
+    <Compile Include="DataVO\CMDSortVO.cs" />
+    <Compile Include="DataVO\MarketInfoVO.cs" />
+    <Compile Include="DataVO\CMDDateVO.cs" />
+    <Compile Include="DataVO\ProductDataVO.cs" />
+    <Compile Include="DataVO\MarketInfoListVO.cs" />
+    <Compile Include="DataVO\CMDVersionVO.cs" />
+    <Compile Include="Service\HQServiceUtil.cs" />
+    <Compile Include="Service\IO\OutputStreamConvert.cs" />
+    <Compile Include="Service\IO\InputStreamConvert.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="OutInfo\IniFile.cs" />
+    <Compile Include="OutInfo\WriteLog.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ToolsLibrary\ToolsLibrary.csproj">
+      <Project>{b3266aea-289d-4777-91d9-f9a6ac4164a0}</Project>
+      <Name>ToolsLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

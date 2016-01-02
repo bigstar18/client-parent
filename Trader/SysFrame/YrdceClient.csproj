@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B7EB1C02-CD9D-4686-9F06-89A88C77B7AF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>YrdceTradeApp</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>项目4.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="CefSharp, Version=1.25.0.25466, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CefSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="CefSharp.WinForms, Version=1.25.0.25471, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CefSharp.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="WebKitBrowser, Version=0.5.0.0, Culture=neutral, PublicKeyToken=b967213f6d29a3be, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WebKitBrowser.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.myset</DependentUpon>
+    </Compile>
+    <Compile Include="YrdceClient.Yrdce.Common.Library\CopyDataStruct.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Library\Cryptographic.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Library\DrawOverflowButtonRenderer.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Library\Global.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Library\IniFile.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Library\PanelLoad.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Library\RandomIdentifyCode.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Library\ReCordUserInfo.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Library\RecordUserName.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Library\ThreadStartAddNodes.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Library\WinSendMessage.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation.MainOperation\FormandPlugin.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation.MainOperation\StripButtonOperation.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation.MainOperation\YrdceClientOperation.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation.Manager\OperationManager.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation\ChangePassWordInfo.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation\ChangePasswordOperation.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation\DisplayFormsOperation.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation\LoginOperation.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation\LogonOperationInfo.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation\MixAccountOperation.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation\PluginsOperation.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation\ProgramOperation.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation\SpeedTestOperation.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation\UpdateOperation.cs" />
+    <Compile Include="YrdceClient.Yrdce.Common.Operation\VerifyCodeOperation.cs" />
+    <Compile Include="YrdceClient.Yrdce.UI.Forms.ContainerManager\ContainerManage.cs" />
+    <Compile Include="YrdceClient.Yrdce.UI.Forms.UserControls\AccountInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YrdceClient.Yrdce.UI.Forms.UserControls\ProgressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YrdceClient.Yrdce.UI.Forms.UserControls\StripButtonControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YrdceClient.Properties\Resources.cs" />
+    <Compile Include="YrdceClient.Properties\Settings.cs" />
+    <Compile Include="YrdceClient.UI.Forms.PromptForms\BalanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YrdceClient.UI.Forms.PromptForms\ChangePW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YrdceClient.UI.Forms.PromptForms\CommitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YrdceClient.UI.Forms.PromptForms\MarketInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YrdceClient.UI.Forms.PromptForms\StyleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YrdceClient.UI.Forms.PromptForms\TestSpeedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YrdceClient.UI.Forms.PromptForms\TimerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YrdceClient.UI.Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YrdceClient\BtnClick.cs" />
+    <Compile Include="YrdceClient\Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YrdceClient\MyTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="YrdceClient\Program.cs" />
+    <Compile Include="YrdceClient\StateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YrdceClient\StateForm.Designer.cs">
+      <DependentUpon>StateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YrdceClient\TimeImage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeImage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="YrdceClient\VistaButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="YrdceClient\XmlReader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="YrdceClient.Yrdce.UI.Forms.UserControls\AccountInfoControl.resources" />
+    <EmbeddedResource Include="YrdceClient.Yrdce.UI.Forms.UserControls\ProgressControl.resources" />
+    <EmbeddedResource Include="YrdceClient.Yrdce.UI.Forms.UserControls\StripButtonControl.resources" />
+    <EmbeddedResource Include="YrdceClient.Properties\Resources.resources" />
+    <EmbeddedResource Include="YrdceClient.UI.Forms.PromptForms\BalanceForm.resources" />
+    <EmbeddedResource Include="YrdceClient.UI.Forms.PromptForms\ChangePW.resources" />
+    <EmbeddedResource Include="YrdceClient.UI.Forms.PromptForms\CommitForm.resources" />
+    <EmbeddedResource Include="YrdceClient.UI.Forms.PromptForms\MarketInfo.resources" />
+    <EmbeddedResource Include="YrdceClient.UI.Forms.PromptForms\StyleForm.resources" />
+    <EmbeddedResource Include="YrdceClient.UI.Forms.PromptForms\TestSpeedForm.resources" />
+    <EmbeddedResource Include="YrdceClient.UI.Forms.PromptForms\TimerForm.resources" />
+    <EmbeddedResource Include="YrdceClient.UI.Forms\LoginForm.resources" />
+    <EmbeddedResource Include="YrdceClient\Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YrdceClient\StateForm.resx">
+      <DependentUpon>StateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YrdceClient\TimeImage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TimeImage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppUpdaterCom\AppUpdaterCom.csproj">
+      <Project>{aec10d6e-27d3-4345-87d4-bb75aa841f90}</Project>
+      <Name>AppUpdaterCom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AxInterop.GNNTKEYLib\AxInterop.KEYLib.csproj">
+      <Project>{1ec634cf-3872-41a9-a482-d844a7b0ed6e}</Project>
+      <Name>AxInterop.KEYLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ButtonEx\ButtonEx.csproj">
+      <Project>{fa761218-ea7a-4435-972b-181286a9366d}</Project>
+      <Name>ButtonEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DIYForm\DIYForm.csproj">
+      <Project>{240c35bf-86f0-4b6b-b9a6-4216a4bf4bb5}</Project>
+      <Name>DIYForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FuturesTrade\FuturesTrade.csproj">
+      <Project>{b42a39a1-b9c5-41bb-b87a-06dd6ffc73e7}</Project>
+      <Name>FuturesTrade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ModulesLoader\ModulesLoader.csproj">
+      <Project>{8470d59c-8ed8-44d9-b2fb-eb7291086a43}</Project>
+      <Name>ModulesLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules\MEBSModule\Plugins\MixAccountPlugin\MixAccountPlugin.csproj">
+      <Project>{9754590d-22e3-4a3f-8165-541b2a2aa5f2}</Project>
+      <Name>MixAccountPlugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PluginInterface\PluginInterface.csproj">
+      <Project>{b3ab78c4-9ffd-4acc-b6e1-a66374a56d78}</Project>
+      <Name>PluginInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoftKeyBroad\SoftKeyboard.csproj">
+      <Project>{48465356-6d61-49e0-b13a-f7471b66e360}</Project>
+      <Name>SoftKeyboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsLibrary\ToolsLibrary.csproj">
+      <Project>{b3266aea-289d-4777-91d9-f9a6ac4164a0}</Project>
+      <Name>ToolsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolStripRender\ToolStripRender.csproj">
+      <Project>{297b2f13-563f-4251-99f1-7314027c31ed}</Project>
+      <Name>ToolStripRender</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="20151111023424921_easyicon_net_128.ico" />
+    <Content Include="2015111102360685_easyicon_net_256%281%29.ico" />
+    <Content Include="20151118043209384.ico" />
+    <Content Include="256x256.ico" />
+    <Content Include="logo.ico" />
+    <Content Include="logo11.ico" />
+    <Content Include="logo44.ico" />
+    <Content Include="logo8.ico" />
+    <Content Include="logo9.ico" />
+    <Content Include="logp.ico" />
+    <None Include="app.config" />
+    <None Include="Properties\Settings.myset">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\PanelTop.png" />
+    <None Include="Resources\Notice.png" />
+    <None Include="Resources\picLogoff.png" />
+    <None Include="Resources\picLogin.png" />
+    <None Include="Resources\picpwd2.png" />
+    <None Include="Resources\topToLeft.png" />
+    <None Include="Resources\topToRight.png" />
+    <Content Include="YrdceClient\CefSharp.dll" />
+    <Content Include="YrdceClient\CefSharp.WinForms.dll" />
+    <Content Include="YrdceClient\icudt.dll" />
+    <Content Include="YrdceClient\libcef.dll" />
+    <Content Include="项目4.ico" />
+    <None Include="Resources\loginBG1.png" />
+    <None Include="Resources\LoginBG.jpg" />
+    <None Include="Resources\telephone.png" />
+    <None Include="Resources\梯形2.png" />
+    <None Include="Resources\Toplogo.png" />
+    <None Include="Resources\梯形%281%29.png" />
+    <None Include="Resources\梯形.png" />
+    <None Include="Resources\9.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\0.png" />
+    <None Include="Resources\冒号.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

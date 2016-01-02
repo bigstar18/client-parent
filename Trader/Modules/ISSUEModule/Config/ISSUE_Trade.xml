@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="gb2312"?>
+<ISSUE>
+  <COMPONENT NAME="Trade">
+    <Title>点此恢复交易界面</Title>
+    <IsWriteLog>false</IsWriteLog>
+    <!--0:默认 1:卖仓单 2:抵顶转让 3:卖仓单和抵顶转让 -->
+    <BillType>0</BillType>
+    <!--条件下单-->
+    <ConditionOrder>
+    </ConditionOrder>
+    <DisplaySwitch>true</DisplaySwitch>
+    <!--转让方式 1:不指定 2：指定时间 3：指定价格-->
+    <CloseMode>1</CloseMode>
+    <MaxIdleRefreshButton>5</MaxIdleRefreshButton>
+    <!--?-->
+    <AddressTransfer>
+    </AddressTransfer>
+    <!--是否主动弹出广播消息-->
+    <DisplayBroadcast>true</DisplayBroadcast>
+    <!--是否显示买卖量-->
+    <DispalyBSV>true</DispalyBSV>
+    <!--是否自动显示分时图-->
+    <AutoDisplayMinLine>true</AutoDisplayMinLine>
+    <!--?-->
+    <MaxIdleOnMoudel>20</MaxIdleOnMoudel>
+    <!--自动刷新时间以秒为单位-->
+    <HqRefreshTime>1.5</HqRefreshTime>
+    <SysTimeRefreshTime>1.3</SysTimeRefreshTime>
+    <OrderItemName>OrderNo:;Time:;CommodityID:;CommodityName:;B_S:;Price:委托价格;Qty:;Balance:;Status:;</OrderItemName>
+    <OrderItems>OrderNo;Time;CommodityID;CommodityName;B_S;Price;Qty;Balance;Status;</OrderItems>
+    <TradeOrderItemName>TradeNo:;OrderNo:;Time:;CommodityID:;CommodityName:;B_S:;Price:成交价格;Qty:;LPrice:;Comm:;</TradeOrderItemName>
+    <TradeOrderItems>TradeNo;OrderNo;Time;CommodityID;CommodityName;B_S;Price;Qty;LPrice;Comm;</TradeOrderItems>
+    <AllOrderItemName>SelectFlagF2:;OrderNo:;Time:;CommodityID:;CommodityName:;B_S:;Price:委托价格;Qty:;Balance:;Status:;</AllOrderItemName>
+    <AllOrderItems>SelectFlagF2;OrderNo;Time;CommodityID;CommodityName;B_S;Price;Qty;Balance;Status;</AllOrderItems>
+    <TradeItemName>TradeNo:;Time:;CommodityID:;CommodityName:;B_S:;Price:成交价格;Qty:;Liqpl:卖出盈亏;LPrice:;Comm:;</TradeItemName>
+    <TradeItems>TradeNo;Time;CommodityID;CommodityName;B_S;Price;Qty;Liqpl;LPrice;Comm;</TradeItems>    
+    <TradeSumItemName>CommodityID:;CommodityName:;BuyQty:买入量;BuyComm:买入手续费;SellQty:卖出量;SellComm:卖出手续费;TotalQty:总量;TotalComm:总手续费;IndeWareHouse:增减仓;</TradeSumItemName>
+    <TradeSumItems>CommodityID;CommodityName;BuyQty;BuyComm;SellQty;SellComm;TotalQty;TotalComm;IndeWareHouse;</TradeSumItems>	
+    <CommodityName>CommodityID:;CommodityName:;SpreadUp:;TmpTradecomm:;Spread:最小变动价位;CommodityName:;SpreadDown:;TmpSettlecomm;MinQty:最小变动数量;LSettledate;</CommodityName>
+    <CommodityItems>CommodityID;CommodityName;SpreadUp;TmpTradecomm;Spread;|CommodityName;SpreadDown;TmpSettlecomm;MinQty;LSettledate;</CommodityItems>  
+    <HoldingName>CommodityID:;CommodityName:;TransactionsCode:;BuyHolding:总持有量;BuyAvg:持有均价;Margin:货款;BuyVHolding:;NewPriceLP:持有盈亏;LPRatio:盈亏比例;MarketValue:市值;</HoldingName>
+    <HoldingDetailName>CommodityID:;CommodityName:;TransactionsCode:;Price:成本价;Cur_Open:;Margin:货款;</HoldingDetailName>
+    <HoldingItems>CommodityID;CommodityName;BuyHolding;BuyAvg;Margin;BuyVHolding;NewPriceLP;LPRatio;MarketValue</HoldingItems>
+    <HoldingDetailItems>CommodityID;CommodityName:;Price:;Cur_Open:;Margin;</HoldingDetailItems>    
+    <FundsName>InitFund:上日资金余额;InFund:  +入金;OutFund:  -出金;HKSell:  +卖出货款;HKSellMinus:  -卖出货款;HKBuy:  -买入货款;CurFreezeFund:  +当日申购冻结资金;CurFreezeFundMinus:  -当日申购冻结资金;CurUnfreezeFund:  +申购解冻资金;OrderFrozenFund:  +委托冻结资金;OrderFrozenFundMinus:  -委托冻结资金;OtherFrozenFund:  -其他冻结资金;IssuanceFee:  -发行服务费;Fee:  -交易手续费;WareHouseRegFee:  -注册提货单费;WareHouseCancelFee:  -注销提货单费;TransferFee:  -提货单过户费;DistributionFee:  -提货单配送费;OtherFee:  -其他费用;OtherChange:  -其它变化;DesirableFund:当日可取资金;MarketValue:  +持有市值;CurrentRight:当前权益;UsableFund:当日可用资金;UsableFundAdd:  +当日可用资金;SGFreezeFund:  +历史申购冻结资金;</FundsName>
+	<FundsItems>InitFund;InFund;HKSell;CurFreezeFundMinus;OrderFrozenFundMinus;IssuanceFee;WareHouseRegFee;TransferFee;OtherFee;UsableFund;null;UsableFund;HKSellMinus;DesirableFund;null;UsableFund;MarketValue;CurFreezeFund;CurrentRight;|null;OutFund;HKBuy;CurUnfreezeFund;OtherFrozenFund;Fee;WareHouseCancelFee;DistributionFee;OtherChange;null;null;null;null;null;null;null;OrderFrozenFund;SGFreezeFund;</FundsItems> 
+    <PreOrderItemName>SelectFlag:;ID:;TransactionsCode:;CommodityCode:;CommodityName:;B_S:;Price:委托价格;Qty:;LPrice:;TodayPosition:卖出方式;</PreOrderItemName>
+    <PreOrderItems>SelectFlag;ID;CommodityCode;CommodityName;B_S;Price;Qty;LPrice;TodayPosition;</PreOrderItems>
+    <InvestorName>Account:账号;Name:姓名;Bank:银行;Phone:电话;IDNum:证件号;</InvestorName>
+    <InvestorItems>Account;Name;IDNum;|Bank;Phone;</InvestorItems>
+  </COMPONENT>
+</ISSUE>

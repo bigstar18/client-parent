@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="gb2312"?>
+ <OTC>
+  <COMPONENT NAME="Trade">
+    <Title>点此恢复交易界面</Title>
+    <IsWriteLog>false</IsWriteLog>
+    <!--0:默认 1:卖仓单 2:抵顶转让 3:卖仓单和抵顶转让 -->
+    <BillType>0</BillType>
+    <!--条件下单-->
+    <ConditionOrder>
+    </ConditionOrder>
+    <!--心跳刷新时间-->
+    <MaxIdleRefreshButton>3</MaxIdleRefreshButton>
+    <!--会员刷新时间-->
+    <Refreshtime>3</Refreshtime>
+    <!--?-->
+    <AddressTransfer>
+    </AddressTransfer>
+    <!--是否主动弹出广播消息-->
+    <DisplayBroadcast>true</DisplayBroadcast>
+    <!--是否显示买卖量-->
+    <DispalyBSV>true</DispalyBSV>
+    <!--是否自动显示分时图-->
+    <AutoDisplayMinLine>true</AutoDisplayMinLine>
+    <!--?-->
+    <MaxIdleOnMoudel >1</MaxIdleOnMoudel>
+    <!--自动刷新时间以秒为单位-->
+    <HqRefreshTime>1</HqRefreshTime>
+    <!--会员刷新时间-->
+    <MemberRefreshtime>4</MemberRefreshtime>
+    <OrderItemName>OrderNo:;Time:;CommodityID:;B_S:;O_L:;Price:;Qty:;Balance:;Status:;</OrderItemName>
+    <OrderItems>OrderNo;Time;TransactionsCode;CommodityID;B_S;O_L;Price;Qty;Balance;Status;</OrderItems>
+    <TradeOrderItemName>TradeNo:;OrderNo:;Time:;CommodityID:;B_S:;O_L:;Price:;Qty:;LPrice:;Comm:;</TradeOrderItemName>
+    <TradeOrderItems>TradeNo;OrderNo;Time;TransactionsCode;CommodityID;B_S;O_L;Price;Qty;LPrice;Comm;</TradeOrderItems>
+    <AllOrderItemName>SelectFlagF2:;OrderNo:;Time:;CommodityID:;B_S:;O_L:;Price:;Qty:;Balance:;Status:;</AllOrderItemName>
+    <AllOrderItems>SelectFlagF2;OrderNo;Time;TransactionsCode;CommodityID;B_S;O_L;Price;Qty;Balance;Status;</AllOrderItems>
+    <TradeItemName>TradeNo:;Time:;CommodityID:;B_S:;O_L:;Price:;Qty:;Liqpl:;LPrice:;Comm:;</TradeItemName>
+    <TradeItems>TradeNo;Time;TransactionsCode;CommodityID;B_S;O_L;Price;Qty;Liqpl;LPrice;Comm;</TradeItems>
+    <CommodityName>CommodityID:;CommodityName:;SpreadUp:;SpreadDown:;BMargin:;SMargin:;LSettledate:;TmpTradecomm:;TmpSettlecomm:;CtrtSize:;</CommodityName>
+    <CommodityItems>CommodityID;CommodityName;SpreadUp;SpreadDown;BMargin;SMargin;|LSettledate;TmpTradecomm;TmpSettlecomm;</CommodityItems>
+    <HoldingName>CommodityID:;TransactionsCode:;BuyHolding:;BuyAvg:;SellHolding:;SellAvg:;Margin:;Floatpl:;GoodsQty:抵顶数量;</HoldingName>
+    <HoldingItems>CommodityID;TransactionsCode;BuyHolding;BuyAvg;SellHolding;SellAvg;Margin;Floatpl;BuyVHolding;SellVHolding;GoodsQty;</HoldingItems>
+    <FundsName>FirmID:;Jysqy:期初余额;HoldGain:       +上日保证金;DynRight:       +上日浮亏;Ioamt:       +出入金;TransLiqpl:       +当日转让盈亏;ChkFund:       +其它变化;RealFunds:当日可用资金;MarginAmt:订货盈亏;Margin:       -当日保证金;Lfpl:       -当日浮亏;FreezFund:       -委托冻结资金;FreezComm:       -其他冻结资金;Comm:       -当日手续费;AddFund:当前权益;TTlMargin:质押资金;Code:;</FundsName>
+    <FundsItems>FirmID;Jysqy;HoldGain;DynRight;Ioamt;TransLiqpl;ChkFund;RealFunds;MarginAmt;AddFund;|null;null;Margin;Lfpl;FreezFund;FreezComm;Comm;null;TTlMargin;</FundsItems>
+    <PreOrderItemName>SelectFlag:;ID:;TransactionsCode:;CommodityCode:;B_S:;O_L:;Price:;Qty:;LPrice:;TodayPosition:;</PreOrderItemName>
+    <PreOrderItems>SelectFlag;ID;TransactionsCode;CommodityCode;B_S;O_L;Price;Qty;LPrice;TodayPosition;</PreOrderItems>
+  </COMPONENT>
+</OTC>

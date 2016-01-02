@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<Context>
+  <parameter>
+    <Flag>false</Flag>
+    <ID>0</ID>
+    <CommodityCode>yum1</CommodityCode>
+    <CommodityName>玉米1号</CommodityName>
+    <MarKet>null</MarKet>
+  </parameter>
+</Context>

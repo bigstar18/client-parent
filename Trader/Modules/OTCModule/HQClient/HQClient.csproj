@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{4A8F9BD0-81B0-4A14-A27B-A0A0266E657B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>HQClient</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="DIYForm" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="HQModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ProxySocket" />
+    <Reference Include="ToolsLibrary" />
+    <Reference Include="AppUpdaterCom" />
+    <Reference Include="Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.BitmapControl\BitmapRegion.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\CommodityInfoF.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\HQClientForm.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\HQForm.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\HQMDIForm.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\HQSubForm.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\InputDialog.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\MarketForm.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\MarketInfo.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\SelectServer.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\UserSet.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\UserSetFlag.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.HQThread\HttpThread.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.HQThread\MYThread.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.HQThread\ReceiveThread.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.HQThread\SendThread.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\ASI.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\BIAS.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\BOLL.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\BRAR.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\CCI.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\CR.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\DMA.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\DMI.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\EMV.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\EXPMA.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\IndicatorBase.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\IndicatorPos.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\KDJ.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\KLine.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\MA.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\MACD.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\MIKE.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\OBV.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\PSY.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\Reserve.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\ROC.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\RSI.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\SAR.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\TRIX.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\VOL.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\VR.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\WVAD.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient.Indicator\W_R.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\BillFieldInfo.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\ButtonUtils.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\clickRect.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Draw_KLine.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Draw_LastBill.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Draw_MinLine.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Draw_Quote.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\HQClientMain.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\MultiQuoteData.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\MultiQuoteItemInfo.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\MyButton.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\M_Common.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Page_Bill.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Page_Bottom.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Page_Button.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Page_History.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Page_KLine.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Page_Main.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Page_MarketStatus.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Page_MinLine.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Page_MultiQuote.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.MEBS.HQClient\Pos.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.util\AddValue.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.util\Arrays.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.util\CommodityClass.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.util\drawingMode.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.util\dwRop.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.util\GDIDraw.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.util\GlobalData.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.util\MyCommodity.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt.util\PenStyles.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.gnnt\InterFace.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.Properties\Resources.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient.Properties\Settings.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient\About.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient\InputWindow.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient\MainWindow.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient\MoudelServerInfo.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient\Program.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient\ServerSet.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient\ServerSetE.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient\SetServerInfoC.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient\SysMessage.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient\TestDraw.cs" />
+    <Compile Include="Gnnt.MEBS.HQClient\TestSendPacket.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplitButtonDemo\SplitButton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\CommodityInfoF.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\HQClientForm.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\HQMDIForm.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\HQSubForm.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\InputDialog.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\MarketForm.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\MarketInfo.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\SelectServer.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient.gnnt.ClientForms\UserSet.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient\About.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient\InputWindow.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient\MainWindow.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient\ServerSet.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient\ServerSetE.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient\SetServerInfoC.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient\SysMessage.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient\TestDraw.resources" />
+    <EmbeddedResource Include="Gnnt.MEBS.HQClient\TestSendPacket.resources" />
+    <EmbeddedResource Include="HQClient.bin.Debug.Gnnt.ch.resources" />
+    <EmbeddedResource Include="HQClient.Properties.Resources.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

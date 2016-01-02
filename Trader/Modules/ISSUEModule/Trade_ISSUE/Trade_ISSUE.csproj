@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1690EBE4-948B-4068-90FF-C1ACB34AAC7F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Trade_ISSUE</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="TradeInterface_ISSUE" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="ToolsLibrary" />
+    <Reference Include="PluginInterface" />
+    <Reference Include="HttpTrade_ISSUE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\AddValue.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\AllOrderItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\BitmapRegion.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\ColItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\CommodityItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\ControlLayout.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\DataProcess.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\FundsItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\Global.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\HoldingDetailItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\HoldingItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\IniData.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\IniFile.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\InterFace.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\InvestorItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\LocalHook.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\MessageBoxEx.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\MessageForm.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\NativeWin32API.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\OrderItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\PlayWav.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\PreOrderItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\TradeItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\TradeOrderItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\TradeSumItemInfo.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\WriteLog.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Library\XmlDataSet.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE.Notifier\TaskbarNotifier.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE\AboutForm.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE\BillOrder.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE\Broadcast.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE\ConditionOrder.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE\FormOrder.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE\FundsTransfer.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE\MainForm.cs" />
+    <Compile Include="TradeClientApp.Gnnt.ISSUE\UserSet.cs" />
+    <Compile Include="TradeClientApp.Properties\Resources.cs" />
+    <Compile Include="TradeClientApp.Properties\Settings.cs" />
+    <Compile Include="TradeClientApp\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TradeClientApp.Gnnt.ISSUE.Library\MessageForm.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.ISSUE.Notifier\TaskbarNotifier.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.ISSUE\AboutForm.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.ISSUE\BillOrder.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.ISSUE\Broadcast.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.ISSUE\ConditionOrder.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.ISSUE\FormOrder.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.ISSUE\FundsTransfer.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.ISSUE\MainForm.resources" />
+    <EmbeddedResource Include="TradeClientApp.Gnnt.ISSUE\UserSet.resources" />
+    <EmbeddedResource Include="TradeClientApp.Properties\Resources.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

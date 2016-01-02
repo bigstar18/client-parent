@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{A8029330-15C1-4246-8806-753BA165E5E3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>MEBS_TradePlugin</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Yrdce.MEBS.Module.TradePlugin\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yrdce.MEBS.Module.TradePlugin\IniFile.cs" />
+    <Compile Include="Yrdce.MEBS.Module.TradePlugin\Program.cs" />
+    <Compile Include="Yrdce.MEBS.Module.TradePlugin\TradePlugin.cs" />
+    <Compile Include="TradePlugin.Properties\Resources.cs" />
+    <Compile Include="TradePlugin.Properties\Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Yrdce.MEBS.Module.TradePlugin\Form1.resources" />
+    <EmbeddedResource Include="TradePlugin.Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FuturesTrade\FuturesTrade.csproj">
+      <Project>{b42a39a1-b9c5-41bb-b87a-06dd6ffc73e7}</Project>
+      <Name>FuturesTrade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules\MEBSModule\HttpTrade\HttpTrade.csproj">
+      <Project>{15f2691c-9f8f-4cb5-8247-72979b182949}</Project>
+      <Name>HttpTrade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules\MEBSModule\TradeInterface\TradeInterface.csproj">
+      <Project>{ed17fc98-bba5-46e8-8c89-d7a55e84a4c3}</Project>
+      <Name>TradeInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PluginInterface\PluginInterface.csproj">
+      <Project>{b3ab78c4-9ffd-4acc-b6e1-a66374a56d78}</Project>
+      <Name>PluginInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsLibrary\ToolsLibrary.csproj">
+      <Project>{b3266aea-289d-4777-91d9-f9a6ac4164a0}</Project>
+      <Name>ToolsLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

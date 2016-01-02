@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{59D07F46-EA2A-439F-8EB8-E3F1D4B82B1E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>SysFrame</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="DIYForm" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="PluginInterface" />
+    <Reference Include="ToolsLibrary" />
+    <Reference Include="SoftKeyboard" />
+    <Reference Include="AxInterop.GNNTKEYLib" />
+    <Reference Include="ButtonEx" />
+    <Reference Include="MixAccountPlugin" />
+    <Reference Include="ModulesLoader" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="ToolStripRender" />
+    <Reference Include="AppUpdaterCom" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Library\CopyDataStruct.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Library\Cryptographic.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Library\DrawOverflowButtonRenderer.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Library\Global.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Library\IniFile.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Library\PanelLoad.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Library\RandomIdentifyCode.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Library\ReCordUserInfo.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Library\RecordUserName.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Library\ThreadStartAddNodes.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Library\WinSendMessage.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation.MainOperation\FormandPlugin.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation.MainOperation\StripButtonOperation.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation.MainOperation\SysFrameOperation.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation.Manager\OperationManager.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation\ChangePassWordInfo.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation\ChangePasswordOperation.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation\DisplayFormsOperation.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation\LoginOperation.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation\LogonOperationInfo.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation\MixAccountOperation.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation\PluginsOperation.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation\ProgramOperation.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation\SpeedTestOperation.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation\UpdateOperation.cs" />
+    <Compile Include="SysFrame.Gnnt.Common.Operation\VerifyCodeOperation.cs" />
+    <Compile Include="SysFrame.Gnnt.UI.Forms.ContainerManager\ContainerManage.cs" />
+    <Compile Include="SysFrame.Gnnt.UI.Forms.PromptForms\ChooseForm.cs" />
+    <Compile Include="SysFrame.Gnnt.UI.Forms.PromptForms\MixAccountForm.cs" />
+    <Compile Include="SysFrame.Gnnt.UI.Forms.UserControls\AccountInfoControl.cs" />
+    <Compile Include="SysFrame.Gnnt.UI.Forms.UserControls\ProgressControl.cs" />
+    <Compile Include="SysFrame.Gnnt.UI.Forms.UserControls\StripButtonControl.cs" />
+    <Compile Include="SysFrame.Properties\Resources.cs" />
+    <Compile Include="SysFrame.Properties\Settings.cs" />
+    <Compile Include="SysFrame.UI.Forms.PromptForms\BalanceForm.cs" />
+    <Compile Include="SysFrame.UI.Forms.PromptForms\ChangePW.cs" />
+    <Compile Include="SysFrame.UI.Forms.PromptForms\CommitForm.cs" />
+    <Compile Include="SysFrame.UI.Forms.PromptForms\MarketInfo.cs" />
+    <Compile Include="SysFrame.UI.Forms.PromptForms\StyleForm.cs" />
+    <Compile Include="SysFrame.UI.Forms.PromptForms\TestSpeedForm.cs" />
+    <Compile Include="SysFrame.UI.Forms.PromptForms\TimerForm.cs" />
+    <Compile Include="SysFrame.UI.Forms\LoginForm.cs" />
+    <Compile Include="SysFrame\Frame.cs" />
+    <Compile Include="SysFrame\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SysFrame.Gnnt.UI.Forms.PromptForms\ChooseForm.resources" />
+    <EmbeddedResource Include="SysFrame.Gnnt.UI.Forms.PromptForms\MixAccountForm.resources" />
+    <EmbeddedResource Include="SysFrame.Gnnt.UI.Forms.UserControls\AccountInfoControl.resources" />
+    <EmbeddedResource Include="SysFrame.Gnnt.UI.Forms.UserControls\ProgressControl.resources" />
+    <EmbeddedResource Include="SysFrame.Gnnt.UI.Forms.UserControls\StripButtonControl.resources" />
+    <EmbeddedResource Include="SysFrame.Properties\Resources.resources" />
+    <EmbeddedResource Include="SysFrame.UI.Forms.PromptForms\BalanceForm.resources" />
+    <EmbeddedResource Include="SysFrame.UI.Forms.PromptForms\ChangePW.resources" />
+    <EmbeddedResource Include="SysFrame.UI.Forms.PromptForms\CommitForm.resources" />
+    <EmbeddedResource Include="SysFrame.UI.Forms.PromptForms\MarketInfo.resources" />
+    <EmbeddedResource Include="SysFrame.UI.Forms.PromptForms\StyleForm.resources" />
+    <EmbeddedResource Include="SysFrame.UI.Forms.PromptForms\TestSpeedForm.resources" />
+    <EmbeddedResource Include="SysFrame.UI.Forms.PromptForms\TimerForm.resources" />
+    <EmbeddedResource Include="SysFrame.UI.Forms\LoginForm.resources" />
+    <EmbeddedResource Include="SysFrame\Frame.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

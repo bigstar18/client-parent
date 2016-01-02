@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="gb2312"?>
+<MEBS>
+  <COMPONENT NAME="Trade">
+    <Title>点此恢复交易界面</Title>
+    <IsWriteLog>false</IsWriteLog>
+    <!--是否开启断网后重登陆-->
+    <IsEnableRelogin>false</IsEnableRelogin>
+    <!--T8使用  以0开头为快捷键 还是以1开头-->
+    <UseZeroKey>true</UseZeroKey>
+    <!--P1交易使用  是否强制修改简单密码（长度小于8，纯数字纯字母）-->
+    <IsModifyPassword>true</IsModifyPassword>
+    <!--格式化数字保留的小数的位数-->
+    <DecimalDigits>2</DecimalDigits>
+    <!-- 自动滚动条的最小尺寸-->
+    <AutoScrollMinSize>695</AutoScrollMinSize>
+    <!--0:默认 1:卖仓单 2:抵顶转让 3:卖仓单和抵顶转让 -->
+    <BillType>0</BillType>
+    <!--是否展示条件下单-->
+    <IsEnableCon>true</IsEnableCon>
+    <!--条件下单-->
+    <ConditionOrderItemName>SelectAll:;OrderNo:;CommodityID:;OrderState:;B_S:;O_L:;Price:;Qty:;ConditionCommodityID:;CoditionType:;ConditionSign:;ConditionPrice:;PrepareTime:;MatureTime:;OrderTime:;TransactionsCode:;</ConditionOrderItemName>
+    <ConditionOrderItems>SelectAll;OrderNo;CommodityID;OrderState;B_S;O_L;Price;Qty;ConditionCommodityID;CoditionType;ConditionSign;ConditionPrice;PrepareTime;MatureTime;OrderTime;TransactionsCode;</ConditionOrderItems>
+    <!--是否显示控制“固定价”与“跟随价”切换的复选框 -->
+    <DisplaySwitch>false</DisplaySwitch>
+    <!--转让方式 1:不指定 2：指定时间 3：指定价格-->
+    <CloseMode>
+    </CloseMode>
+    <MaxIdleRefreshButton>5</MaxIdleRefreshButton>
+    <!--?-->
+    <AddressTransfer>
+    </AddressTransfer>
+    <!--是否主动弹出广播消息-->
+    <DisplayBroadcast>true</DisplayBroadcast>
+    <!--是否显示买卖量-->
+    <DispalyBSV>true</DispalyBSV>
+    <!--是否自动显示分时图-->
+    <AutoDisplayMinLine>true</AutoDisplayMinLine>
+    <!--?-->
+    <MaxCount>1000</MaxCount>
+    <PageNum>300</PageNum>
+    <MaxIdleOnMoudel>20</MaxIdleOnMoudel>
+    <!--自动刷新时间以秒为单位-->
+    <HqRefreshTime>1.3</HqRefreshTime>
+    <GNRefreshTime>1.5</GNRefreshTime>
+    <OrderItemName>OrderNo:;Time:;CommodityID:;B_S:;O_L:;Price:;Qty:;Balance:;Status:;</OrderItemName>
+    <OrderItems>OrderNo;Time;TransactionsCode;CommodityID;B_S;O_L;Price;Qty;Balance;Status;</OrderItems>
+    <TradeOrderItemName>TradeNo:;OrderNo:;Time:;CommodityID:;B_S:;O_L:;Price:;Qty:;LPrice:;Comm:;</TradeOrderItemName>
+    <TradeOrderItems>TradeNo;OrderNo;Time;TransactionsCode;CommodityID;B_S;O_L;Price;Qty;LPrice;Comm;</TradeOrderItems>
+    <AllOrderItemName>SelectFlagF2:;OrderNo:;Time:;CommodityID:;B_S:;O_L:;Price:;Qty:;Balance:;Status:;</AllOrderItemName>
+    <AllOrderItems>SelectFlagF2;OrderNo;Time;TransactionsCode;CommodityID;B_S;O_L;Price;Qty;Balance;Status;</AllOrderItems>
+    <TradeItemName>TradeNo:;Time:;CommodityID:;B_S:;O_L:;Price:;Qty:;Liqpl:;LPrice:;Comm:;</TradeItemName>
+    <TradeItems>TradeNo;Time;TransactionsCode;CommodityID;B_S;O_L;Price;Qty;Liqpl;LPrice;Comm;</TradeItems>
+    <CommodityName>CommodityID:;CommodityName:;SpreadUp:;SpreadDown:;BMargin:;SMargin:;LSettledate:;TmpTradecomm:;TmpSettlecomm:;CtrtSize:;MaxHoldDays:;</CommodityName>
+    <CommodityItems>CommodityID;CommodityName;SpreadUp;SpreadDown;BMargin;SMargin;|LSettledate;TmpTradecomm;TmpSettlecomm;MaxHoldDays;</CommodityItems>
+    <HoldingName>CommodityID:;TransactionsCode:;BuyHolding:;BuyAvg:;SellHolding:;SellAvg:;Margin:;Floatpl:;NewPriceLP:实时盈亏;GoodsQty:抵顶数量;NetHolding:净订货;AllHolding:总订货;</HoldingName>
+    <HoldingDetailName>CommodityID:;TransactionsCode:;B_S:;Price:;Cur_Open:;GoodsQty:抵顶数量;Margin:;holddate:;RemainDay:;</HoldingDetailName>
+    <HoldingItems>CommodityID;TransactionsCode;BuyHolding;BuyAvg;SellHolding;SellAvg;Margin;Floatpl;BuyVHolding;SellVHolding;NewPriceLP;GoodsQty;holddate;NetHolding;AllHolding</HoldingItems>
+    <HoldingDetailItems>CommodityID;TransactionsCode;B_S:;Price:;Cur_Open:;GoodsQty:抵顶数量;Margin;holddate;RemainDay;</HoldingDetailItems>
+    <FundsName>FirmID:;Jysqy:期初余额;HoldGain:       +上日保证金;DynRight:       +上日浮亏;Ioamt:       +出入金;TransLiqpl:       +当日转让盈亏;ChkFund:       +其它变化;RealFunds:当日可用资金;MarginAmt:订货盈亏;Margin:       -当日保证金;Lfpl:       -当日浮亏;FreezFund:       -委托冻结资金;FreezComm:       -其他冻结资金;Comm:       -当日手续费;AddFund:当前权益;TTlMargin:质押资金;Zjaql:资金安全率;Code:;</FundsName>
+    <FundsItems>FirmID;Jysqy;HoldGain;DynRight;Ioamt;TransLiqpl;ChkFund;RealFunds;MarginAmt;AddFund;|null;null;Margin;Lfpl;FreezFund;FreezComm;Comm;null;TTlMargin;Zjaql;</FundsItems>
+    <PreOrderItemName>SelectFlag:;ID:;TransactionsCode:;CommodityCode:;B_S:;O_L:;Price:;Qty:;LPrice:;TodayPosition:;</PreOrderItemName>
+    <PreOrderItems>SelectFlag;ID;TransactionsCode;CommodityCode;B_S;O_L;Price;Qty;LPrice;TodayPosition;</PreOrderItems>
+  </COMPONENT>
+</MEBS>

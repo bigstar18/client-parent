@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B3266AEA-289D-4777-91D9-F9A6AC4164A0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ToolsLibrary</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToolsLibrary.Notifier\TaskbarNotifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolsLibrary.Properties\Resources.cs" />
+    <Compile Include="ToolsLibrary.Properties\Settings.cs" />
+    <Compile Include="ToolsLibrary.util\BitmapRegion.cs" />
+    <Compile Include="ToolsLibrary.util\IniFile.cs" />
+    <Compile Include="ToolsLibrary.util\ScaleForm.cs" />
+    <Compile Include="ToolsLibrary.util\SysLanguage.cs" />
+    <Compile Include="ToolsLibrary.util\SysShareInfo.cs" />
+    <Compile Include="ToolsLibrary.util\Tools.cs" />
+    <Compile Include="ToolsLibrary.XmlUtil\XmlParse.cs" />
+    <Compile Include="ToolsLibrary\FrmWaiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolsLibrary\LoadingCircle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToolsLibrary\PasswordTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolsLibrary\Program.cs" />
+    <Compile Include="TPME.Log\Log.cs" />
+    <Compile Include="TPME.Log\Logger.cs" />
+    <Compile Include="TPME.Log\LogType.cs" />
+    <Compile Include="TPME.Log\Msg.cs" />
+    <Compile Include="TPME.Log\MsgType.cs" />
+    <Compile Include="XmlUtil\CryptUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolsLibrary.Notifier\TaskbarNotifier.resources" />
+    <EmbeddedResource Include="ToolsLibrary.Properties\Resources.resources" />
+    <EmbeddedResource Include="ToolsLibrary\FrmWaiting.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
